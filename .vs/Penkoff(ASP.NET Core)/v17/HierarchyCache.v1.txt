@@ -1,0 +1,224 @@
+﻿++Solution 'Penkoff(ASP.NET Core)' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:Penkoff(ASP.NET Core).sln
+++Penkoff(ASP.NET Core)
+i:{00000000-0000-0000-0000-000000000000}:Penkoff(ASP.NET Core)
+++Connected Services 
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>199
+++Dependencies
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>198
+++Properties
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\properties\
+++wwwroot
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\
+++Controllers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\controllers\
+++HomeController.cs
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\controllers\homecontroller.cs
+++Models
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\models\
+++ErrorViewModel.cs
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\models\errorviewmodel.cs
+++Views
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\
+++Home
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\home\
+++Index.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\home\index.cshtml
+++Privacy.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\home\privacy.cshtml
+++Shared
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\
+++_ViewImports.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\_viewstart.cshtml
+++appsettings.json
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\appsettings.json
+++appsettings.Development.json
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\appsettings.development.json
+++Program.cs
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\program.cs
+++No service dependencies discovered
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>200
+++Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:analyzers
+++Frameworks
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:frameworks
+++launchSettings.json
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\properties\launchsettings.json
+++css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\
+++js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\js\
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\
+++favicon.ico
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\favicon.ico
+++_Layout.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\_layout.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\error.cshtml
+++Microsoft.AspNetCore.Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.3\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\microsoft.netcore.app
+++site.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\site.css
+++site.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\js\site.js
+++bootstrap
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\
+++jquery
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery\
+++jquery-validation
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation-unobtrusive\
+++_Layout.cshtml.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\_layout.cshtml.css
+++dist
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery\dist\
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery\license.txt
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++jquery.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++bootstrap.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++bootstrap.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.rtl.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery\dist\jquery.min.map
+++bootstrap.min.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.esm.js.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++bootstrap.rtl.min.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++site - Copy.css
+++style.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\style.css

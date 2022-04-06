@@ -1,0 +1,26 @@
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\appsettings.Development.json
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\appsettings.json
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Penkoff(ASP.NET Core).staticwebassets.runtime.json
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Penkoff(ASP.NET Core).exe
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Penkoff(ASP.NET Core).deps.json
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Penkoff(ASP.NET Core).runtimeconfig.json
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Penkoff(ASP.NET Core).dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Penkoff(ASP.NET Core).pdb
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).csproj.AssemblyReference.cache
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).GeneratedMSBuildEditorConfig.editorconfig
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).AssemblyInfoInputs.cache
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).AssemblyInfo.cs
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).csproj.CoreCompileInputs.cache
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).MvcApplicationPartsAssemblyInfo.cache
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).RazorAssemblyInfo.cache
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).RazorAssemblyInfo.cs
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\staticwebassets.build.json
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\staticwebassets.development.json
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\scopedcss\bundle\Penkoff(ASP.NET Core).styles.css
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\scopedcss\projectbundle\Penkoff(ASP.NET Core).bundle.scp.css
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).dll
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\refint\Penkoff(ASP.NET Core).dll
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).pdb
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).genruntimeconfig.cache
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\ref\Penkoff(ASP.NET Core).dll

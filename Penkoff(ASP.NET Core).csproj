@@ -7,4 +7,13 @@
     <RootNamespace>Penkoff_ASP.NET_Core_</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\Chip.png" />
+    <None Include="wwwroot\images\Iconmale.png" />
+  </ItemGroup>
+
 </Project>

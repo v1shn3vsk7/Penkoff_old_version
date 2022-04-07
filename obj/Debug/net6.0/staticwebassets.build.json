@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WXAxnePnfVZ3R5OxE0RooPSeaWKfjKPUBd+yLo0Djjc=",
+  "Hash": "FObvt58Cj8JCzUvZ3XLHpv1OXbSC8YHh5hgb1GohZcY=",
   "Source": "Penkoff(ASP.NET Core)",
   "BasePath": "_content/Penkoff(ASP.NET Core)",
   "Mode": "Default",
@@ -100,6 +100,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\images\\Chip.png",
+      "SourceId": "Penkoff(ASP.NET Core)",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\",
+      "BasePath": "_content/Penkoff(ASP.NET Core)",
+      "RelativePath": "images/Chip.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Chip.png"
+    },
+    {
+      "Identity": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\images\\Iconmale.png",
+      "SourceId": "Penkoff(ASP.NET Core)",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\",
+      "BasePath": "_content/Penkoff(ASP.NET Core)",
+      "RelativePath": "images/Iconmale.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Iconmale.png"
     },
     {
       "Identity": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\js\\site.js",

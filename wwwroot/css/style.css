@@ -12,15 +12,25 @@ body {
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/*.verticalLine {
+    position: absolute;
+    width: 1240px;
+    height: 0px;
+    left: 100px;
+    top: 60px;
+    
+    border: 1px solid #9B9B9B;
+} */
+
+/*h1, h2, h3, h4, h5, h6 {
     margin: 0;
-}
+} */
 
 h1 {
     position: absolute;
     width: 700px;
     height: 40px;
-    left: 155px;
+    left: 165px;
     top: 90px;
     font-family: 'SF Pro Display';
     font-style: normal;
@@ -29,6 +39,142 @@ h1 {
     line-height: 48px;
     color: #000000;
 }
+
+h2 {
+    position: absolute;
+    width: 183px;
+    height: 45px;
+    left: 180px;
+    top: 260px;
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    color: #ADB5B4;
+}
+
+h3 {
+    position: absolute;
+    width: 345px;
+    height: 34px;
+    left: 870px;
+    top: 240px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.pouring_h4 {
+    left: 873px;
+    top: 330px;
+    font-size: 26px;
+    line-height: 50px;
+    font-family: 'SF Pro Display';
+    font-weight: 900;
+    position: absolute;
+    background: transparent;
+    overflow: hidden;
+    /*text-transform: uppercase;*/
+    text-align: center;
+}
+
+    .pouring_h4:before {
+        content: '';
+        position: absolute;
+        filter: blur(10px);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: screen;
+        background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, #1620FA 1em, #16FAEA 50%), repeating-linear-gradient(45deg, #1620FA, #16FAEA 1em, #D016FA 1em, #BFE2FF 50%);
+        background-size: 3em 3em, 2em 2em;
+        animation-name: ani;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+.pouring_h5 {
+    left: 915px;
+    top: 380px;
+    font-size: 26px;
+    line-height: 50px;
+    font-family: 'SF Pro Display';
+    font-weight: 900;
+    position: absolute;
+    background: transparent;
+    overflow: hidden;
+    /*text-transform: uppercase;*/
+    text-align: center;
+}
+
+    .pouring_h5:before {
+        content: '';
+        position: absolute;
+        filter: blur(10px);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: screen;
+        background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, #1620FA 1em, #16FAEA 50%), repeating-linear-gradient(45deg, #1620FA, #16FAEA 1em, #D016FA 1em, #BFE2FF 50%);
+        background-size: 3em 3em, 2em 2em;
+        animation-name: ani;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+@keyframes ani {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+}
+
+@media (max-width:690px) {
+    .pouring {
+        font-size: 20px;
+    }
+}
+
+/*h4 {
+position: absolute;
+width: 345px;
+height: 34px;
+left: 873px;
+top: 300px;
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 42px;
+color: #000000;
+}
+
+h5 {
+    position: absolute;
+    width: 345px;
+    height: 34px;
+    left: 873px;
+    top: 330px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 42px;
+    color: #000000;  
+} */
 
 .container {
     width: 100%;
@@ -45,7 +191,7 @@ h1 {
 .header {
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
     left: 0;
     z-index: 1000;
@@ -94,8 +240,109 @@ h1 {
     position: absolute;
     width: 458.85px;
     height: 320px;
-    left: 119.8px;
+    left: 160px;
     top: 265px;
-    background: #575757;
+    background-image: url(https://www.meme-arsenal.com/memes/8919a9ae99de437d346a0560a968b91e.jpg);
+    background-size: 133%;
+    background-position: -100px;
     border-radius: 30px;
+}
+
+.male_icon1 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 530px;
+    top: 300px;
+}
+
+.chip_icon {
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    left: 180px;
+    top: 390px;
+}
+
+.glow-on-hover {
+    font-family: 'SF Pro Display';
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    top: -200px;
+    left: 920px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .4s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .glow-on-hover:active {
+        color: #000
+    }
+
+        .glow-on-hover:active:after {
+            background: transparent;
+        }
+
+    .glow-on-hover:hover:before {
+        opacity: 1;
+    }
+
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }

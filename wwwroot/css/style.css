@@ -12,25 +12,11 @@ body {
     box-sizing: border-box;
 }
 
-/*.verticalLine {
-    position: absolute;
-    width: 1240px;
-    height: 0px;
-    left: 100px;
-    top: 60px;
-    
-    border: 1px solid #9B9B9B;
-} */
-
-/*h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-} */
-
 h1 {
     position: absolute;
     width: 700px;
     height: 40px;
-    left: 165px;
+    left: 160px;
     top: 90px;
     font-family: 'SF Pro Display';
     font-style: normal;
@@ -82,7 +68,7 @@ h3 {
     text-align: center;
 }
 
-    .pouring_h4:before {
+.pouring_h4:before {
         content: '';
         position: absolute;
         filter: blur(10px);
@@ -98,10 +84,10 @@ h3 {
         animation-timing-function: linear;
         animation-iteration-count: infinite;
         animation-direction: alternate;
-    }
+}
 
 .pouring_h5 {
-    left: 915px;
+    left: 873px;
     top: 380px;
     font-size: 26px;
     line-height: 50px;
@@ -114,7 +100,7 @@ h3 {
     text-align: center;
 }
 
-    .pouring_h5:before {
+.pouring_h5:before {
         content: '';
         position: absolute;
         filter: blur(10px);
@@ -130,7 +116,38 @@ h3 {
         animation-timing-function: linear;
         animation-iteration-count: infinite;
         animation-direction: alternate;
-    }
+}
+
+.pouring_h6 {
+    left: 873px;
+    top: 430px;
+    font-size: 26px;
+    line-height: 50px;
+    font-family: 'SF Pro Display';
+    font-weight: 900;
+    position: absolute;
+    background: transparent;
+    overflow: hidden;
+    text-align: center;
+}
+
+.pouring_h6:before {
+        content: '';
+        position: absolute;
+        filter: blur(10px);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: screen;
+        background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, #1620FA 1em, #16FAEA 50%), repeating-linear-gradient(45deg, #1620FA, #16FAEA 1em, #D016FA 1em, #BFE2FF 50%);
+        background-size: 3em 3em, 2em 2em;
+        animation-name: ani;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+}
 
 @keyframes ani {
     from {
@@ -147,34 +164,6 @@ h3 {
         font-size: 20px;
     }
 }
-
-/*h4 {
-position: absolute;
-width: 345px;
-height: 34px;
-left: 873px;
-top: 300px;
-font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 42px;
-color: #000000;
-}
-
-h5 {
-    position: absolute;
-    width: 345px;
-    height: 34px;
-    left: 873px;
-    top: 330px;
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 42px;
-    color: #000000;  
-} */
 
 .container {
     width: 100%;
@@ -223,9 +212,9 @@ h5 {
     transition: color .2s linear;
 }
 
-    .nav_link:hover {
+.nav_link:hover {
         color: #16FAEA;
-    }
+}
 
 #rectangle {
     position: absolute;
@@ -271,7 +260,7 @@ h5 {
     width: 100%;
     height: 100vh;
     top: -200px;
-    left: 920px;
+    left: 770px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -292,7 +281,7 @@ h5 {
     border-radius: 10px;
 }
 
-    .glow-on-hover:before {
+.glow-on-hover:before {
         content: '';
         background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
         position: absolute;
@@ -307,21 +296,21 @@ h5 {
         opacity: 0;
         transition: opacity .4s ease-in-out;
         border-radius: 10px;
-    }
+}
 
-    .glow-on-hover:active {
+.glow-on-hover:active {
         color: #000
-    }
+}
 
-        .glow-on-hover:active:after {
+.glow-on-hover:active:after {
             background: transparent;
-        }
+}
 
-    .glow-on-hover:hover:before {
+.glow-on-hover:hover:before {
         opacity: 1;
-    }
+}
 
-    .glow-on-hover:after {
+.glow-on-hover:after {
         z-index: -1;
         content: '';
         position: absolute;
@@ -331,7 +320,7 @@ h5 {
         left: 0;
         top: 0;
         border-radius: 10px;
-    }
+}
 
 @keyframes glowing {
     0% {

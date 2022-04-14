@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FObvt58Cj8JCzUvZ3XLHpv1OXbSC8YHh5hgb1GohZcY=",
+  "Hash": "qkBC9klFUUaozCWK78pAva2JzrUgJnvwmsbA0tEHA/c=",
   "Source": "Penkoff(ASP.NET Core)",
   "BasePath": "_content/Penkoff(ASP.NET Core)",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Labs\\Penkoff(ASP.NET Core)\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Penkoff(ASP.NET Core).bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\css\\authorization.css",
+      "SourceId": "Penkoff(ASP.NET Core)",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\",
+      "BasePath": "_content/Penkoff(ASP.NET Core)",
+      "RelativePath": "css/authorization.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\authorization.css"
     },
     {
       "Identity": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\css\\site.css",

@@ -3,25 +3,44 @@ i:{00000000-0000-0000-0000-000000000000}:Penkoff(ASP.NET Core).sln
 ++Penkoff(ASP.NET Core)
 i:{00000000-0000-0000-0000-000000000000}:Penkoff(ASP.NET Core)
 ++Connected Services 
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>199
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1259
 ++Dependencies
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>198
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1258
 ++Properties
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\properties\
 ++wwwroot
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\
+++css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\
+++authorization.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\authorization.css
+++site.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\site.css
+++style.css
+++images
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\images\
+++js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\js\
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\
+++site.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\js\site.js
+++lib
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\
+++favicon.ico
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\favicon.ico
 ++Controllers
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\controllers\
 ++HomeController.cs
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\controllers\homecontroller.cs
 ++Models
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\models\
-++ErrorViewModel.cs
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\models\errorviewmodel.cs
 ++Views
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\
 ++Home
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\home\
+++Authorization.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\home\authorization.cshtml
 ++Index.cshtml
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\home\index.cshtml
 ++Privacy.cshtml
@@ -32,36 +51,42 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\sha
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\_viewimports.cshtml
 ++_ViewStart.cshtml
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\_viewstart.cshtml
+++.gitignore
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\.gitignore
 ++appsettings.json
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\appsettings.json
-++appsettings.Development.json
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\appsettings.development.json
 ++Program.cs
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\program.cs
 ++No service dependencies discovered
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>200
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1260
 ++Analyzers
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:analyzers
 ++Frameworks
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:frameworks
 ++launchSettings.json
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\properties\launchsettings.json
-++css
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\
-++js
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\js\
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\
-++lib
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\
-++favicon.ico
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\favicon.ico
+++Chip.png
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\images\chip.png
+++Iconmale.png
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\images\iconmale.png
+++bootstrap
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\
+++jquery
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery\
+++jquery-validation
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation-unobtrusive\
+++ErrorViewModel.cs
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\models\errorviewmodel.cs
 ++_Layout.cshtml
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\_layout.cshtml
 ++_ValidationScriptsPartial.cshtml
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\_validationscriptspartial.cshtml
 ++Error.cshtml
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\error.cshtml
+++appsettings.Development.json
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\appsettings.development.json
 ++Microsoft.AspNetCore.Analyzers
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
 ++Microsoft.AspNetCore.App.Analyzers
@@ -88,20 +113,6 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\microsoft.aspnetcore.app
 ++Microsoft.NETCore.App
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\microsoft.netcore.app
-++site.css
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\site.css
-++site.js
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\js\site.js
-++bootstrap
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\
-++jquery
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery\
-++jquery-validation
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation\
-++jquery-validation-unobtrusive
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation-unobtrusive\
-++_Layout.cshtml.css
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\_layout.cshtml.css
 ++dist
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery\dist\
@@ -115,6 +126,8 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\l
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation\license.md
 ++jquery.validate.unobtrusive.js
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++_Layout.cshtml.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\_layout.cshtml.css
 ++jquery.js
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery\dist\jquery.js
 ++additional-methods.js
@@ -219,6 +232,6 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\l
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 ++bootstrap.esm.min.js.map
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-++site - Copy.css
-++style.css
+++StyleSheet.css
+++Style.css
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\style.css

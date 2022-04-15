@@ -132,21 +132,21 @@ h3 {
 }
 
 .pouring_h6:before {
-        content: '';
-        position: absolute;
-        filter: blur(10px);
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        mix-blend-mode: screen;
-        background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, #1620FA 1em, #16FAEA 50%), repeating-linear-gradient(45deg, #1620FA, #16FAEA 1em, #D016FA 1em, #BFE2FF 50%);
-        background-size: 3em 3em, 2em 2em;
-        animation-name: ani;
-        animation-duration: 3s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
+    content: '';
+    position: absolute;
+    filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, #1620FA 1em, #16FAEA 50%), repeating-linear-gradient(45deg, #1620FA, #16FAEA 1em, #D016FA 1em, #BFE2FF 50%);
+    background-size: 3em 3em, 2em 2em;
+    animation-name: ani;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 @keyframes ani {

@@ -18,6 +18,11 @@ namespace Penkoff_ASP.NET_Core_.Controllers
             return View();
         }
 
+        public IActionResult Authorization()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

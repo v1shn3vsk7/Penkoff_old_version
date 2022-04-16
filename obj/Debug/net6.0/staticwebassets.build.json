@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "r5vnclHehOLVwiosVW8Ps6yMZS+TUKilzlkcUcudyLo=",
+  "Hash": "vg1bQm+Gfn9kWf3dyCrUjRd5JEOiXDhGeuHJ1CG0CZs=",
   "Source": "Penkoff(ASP.NET Core)",
   "BasePath": "_content/Penkoff(ASP.NET Core)",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\authorization.css"
+    },
+    {
+      "Identity": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\css\\SignUpStyle.css",
+      "SourceId": "Penkoff(ASP.NET Core)",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\",
+      "BasePath": "_content/Penkoff(ASP.NET Core)",
+      "RelativePath": "css/SignUpStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\SignUpStyle.css"
     },
     {
       "Identity": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\css\\site.css",

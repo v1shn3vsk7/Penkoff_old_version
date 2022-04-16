@@ -23,6 +23,10 @@ namespace Penkoff_ASP.NET_Core_.Controllers
             return View();
         }
 
+        public IActionResult SignUpPage()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

@@ -3,9 +3,9 @@ i:{00000000-0000-0000-0000-000000000000}:Penkoff(ASP.NET Core).sln
 ++Penkoff(ASP.NET Core)
 i:{00000000-0000-0000-0000-000000000000}:Penkoff(ASP.NET Core)
 ++Connected Services 
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1259
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1413
 ++Dependencies
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1258
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1412
 ++Properties
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\properties\
 ++wwwroot
@@ -15,9 +15,12 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\c
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\
 ++authorization.css
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\authorization.css
+++SignUpStyle.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\signupstyle.css
 ++site.css
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\site.css
-++style.css
+++Style.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\style.css
 ++images
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\images\
 ++js
@@ -35,6 +38,10 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\controlle
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\controllers\homecontroller.cs
 ++Models
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\models\
+++ErrorViewModel.cs
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\models\errorviewmodel.cs
+++User.cs
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\models\user.cs
 ++Views
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\
 ++Home
@@ -45,6 +52,8 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\hom
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\home\index.cshtml
 ++Privacy.cshtml
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\home\privacy.cshtml
+++SignUpPage.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\home\signuppage.cshtml
 ++Shared
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\
 ++_ViewImports.cshtml
@@ -58,11 +67,12 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\appsettin
 ++Program.cs
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\program.cs
 ++No service dependencies discovered
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1260
 ++Analyzers
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:analyzers
 ++Frameworks
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:frameworks
+++Packages
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:packages
 ++launchSettings.json
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\properties\launchsettings.json
 ++Chip.png
@@ -77,8 +87,6 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\l
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation\
 ++jquery-validation-unobtrusive
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation-unobtrusive\
-++ErrorViewModel.cs
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\models\errorviewmodel.cs
 ++_Layout.cshtml
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\_layout.cshtml
 ++_ValidationScriptsPartial.cshtml
@@ -87,6 +95,8 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\sha
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\error.cshtml
 ++appsettings.Development.json
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\appsettings.development.json
+++MessagePackAnalyzer
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\users\владимир\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
 ++Microsoft.AspNetCore.Analyzers
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
 ++Microsoft.AspNetCore.App.Analyzers
@@ -99,10 +109,16 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdk
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
 ++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\users\владимир\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\users\владимир\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
 ++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
 ++Microsoft.CodeAnalysis.NetAnalyzers
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\users\владимир\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
 ++Microsoft.Extensions.Logging.Generators
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
 ++Microsoft.NET.Sdk.Razor.SourceGenerators
@@ -113,6 +129,14 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\microsoft.aspnetcore.app
 ++Microsoft.NETCore.App
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\microsoft.netcore.app
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.4)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1521
+++Microsoft.EntityFrameworkCore.Tools (6.0.4)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>2080
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.3)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>2081
+++Swashbuckle.AspNetCore (6.3.0)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1522
 ++dist
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery\dist\
@@ -232,6 +256,19 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\l
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 ++bootstrap.esm.min.js.map
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-++StyleSheet.css
-++Style.css
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\style.css
+++ApplicationContext.cs
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\models\applicationcontext.cs
+++dbContext.cs
+++SimpleContext.cs
+++Microsoft.EntityFrameworkCore.Sqlite (6.0.4)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>2088
+++NewFolder
+++EntityTypeConfigurations
+++UserConfiguration.cs
+++SQL Server Database (ConnectionStrings:DefaultConnection)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>2094
+++SQL Server Database dependency with connectionId 'ConnectionStrings:DefaultConnection' is detected
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>2095
+++IUsersDbContext.cs
+++UsersDbContext.cs
+++DbInitializer.cs

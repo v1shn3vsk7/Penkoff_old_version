@@ -34,7 +34,7 @@ h2 {
 
 .signUpBox {
     width: 500px;
-    height: 600px;
+    height: 450px;
     background: #FFFFFF;
     top: 50%;
     left: 50%;
@@ -64,6 +64,60 @@ input[type="password"]  {
     border-radius: 12px;
 }
 
+.submit_button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.25rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    left: 37%;
+    overflow: hidden;
+    z-index: 1;
+    width: 60px;
+    height: 3px;
+}
+
+.submit_button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #176FFA;
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+.submit_button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #16E3FA;
+    transition: all 0.4s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.submit_button:hover {
+    color: #fff;
+}
+
+.submit_button:hover:before {
+    width: 100%;
+}
+
 .tmp {
     position: absolute;
     top: 92%;
@@ -78,4 +132,6 @@ input[type="password"]  {
     width: 600px;
     color: #9B9B9B;
 }
+
+
 

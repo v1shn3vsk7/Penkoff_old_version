@@ -5,25 +5,8 @@ C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Penkoff(ASP.NET Core).exe
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Penkoff(ASP.NET Core).deps.json
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Penkoff(ASP.NET Core).runtimeconfig.json
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Penkoff(ASP.NET Core).dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\ref\Penkoff(ASP.NET Core).dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Penkoff(ASP.NET Core).pdb
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).csproj.AssemblyReference.cache
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).GeneratedMSBuildEditorConfig.editorconfig
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).AssemblyInfoInputs.cache
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).AssemblyInfo.cs
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).csproj.CoreCompileInputs.cache
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).MvcApplicationPartsAssemblyInfo.cache
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).RazorAssemblyInfo.cache
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).RazorAssemblyInfo.cs
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\staticwebassets.build.json
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\staticwebassets.development.json
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\scopedcss\bundle\Penkoff(ASP.NET Core).styles.css
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\scopedcss\projectbundle\Penkoff(ASP.NET Core).bundle.scp.css
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).dll
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\refint\Penkoff(ASP.NET Core).dll
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).pdb
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).genruntimeconfig.cache
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\ref\Penkoff(ASP.NET Core).dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Humanizer.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\MessagePack.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\MessagePack.Annotations.dll
@@ -45,14 +28,17 @@ C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.CodeAnalysis.VisualBasi
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.Data.Sqlite.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
@@ -79,6 +65,9 @@ C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\NuGet.Packaging.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\NuGet.ProjectModel.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\NuGet.Protocol.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\NuGet.Versioning.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\SQLitePCLRaw.batteries_v2.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\SQLitePCLRaw.core.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -259,19 +248,6 @@ C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).MvcApplicationPartsAssemblyInfo.cs
-C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).csproj.CopyComplete
-C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.Data.Sqlite.dll
-C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Sqlite.dll
-C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
-C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\SQLitePCLRaw.batteries_v2.dll
-C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\SQLitePCLRaw.core.dll
-C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\alpine-x64\native\libe_sqlite3.so
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\linux-arm\native\libe_sqlite3.so
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\linux-arm64\native\libe_sqlite3.so
@@ -287,3 +263,318 @@ C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win-arm\native\e_sqlite3
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).GeneratedMSBuildEditorConfig.editorconfig
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).AssemblyInfoInputs.cache
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).AssemblyInfo.cs
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).csproj.CoreCompileInputs.cache
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).MvcApplicationPartsAssemblyInfo.cs
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).MvcApplicationPartsAssemblyInfo.cache
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).RazorAssemblyInfo.cache
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).RazorAssemblyInfo.cs
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\staticwebassets.build.json
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\staticwebassets.development.json
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\scopedcss\bundle\Penkoff(ASP.NET Core).styles.css
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\scopedcss\projectbundle\Penkoff(ASP.NET Core).bundle.scp.css
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).csproj.CopyComplete
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).dll
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\ref\Penkoff(ASP.NET Core).dll
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).pdb
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).genruntimeconfig.cache
+C:\Labs\Penkoff(ASP.NET Core)\obj\Debug\net6.0\Penkoff(ASP.NET Core).csproj.AssemblyReference.cache
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Antiforgery.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authentication.Core.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authentication.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authorization.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Components.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Components.Forms.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Components.Server.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Components.Web.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.CookiePolicy.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cors.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.DataProtection.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Diagnostics.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.HostFiltering.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Hosting.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Html.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Http.Connections.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Http.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Http.Features.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Http.Results.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.HttpLogging.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.HttpOverrides.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.HttpsPolicy.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Identity.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Localization.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Localization.Routing.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Metadata.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.Cors.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.Localization.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.Razor.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Razor.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Razor.Runtime.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.ResponseCaching.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.ResponseCompression.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Rewrite.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Routing.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Server.HttpSys.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Server.IIS.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Server.IISIntegration.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Server.Kestrel.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Session.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.SignalR.Core.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.SignalR.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.StaticFiles.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.WebSockets.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.AspNetCore.WebUtilities.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.CSharp.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Caching.Memory.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.Binder.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.Ini.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.Json.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.Xml.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.DependencyInjection.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Features.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.FileProviders.Composite.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Hosting.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Http.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Identity.Core.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Identity.Stores.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Localization.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Logging.Configuration.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Logging.Console.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Logging.Debug.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Logging.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Logging.EventLog.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Logging.EventSource.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Logging.TraceSource.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.ObjectPool.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Options.DataAnnotations.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Options.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.Primitives.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Extensions.WebEncoders.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.JSInterop.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Net.Http.Headers.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.VisualBasic.Core.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.VisualBasic.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Win32.Primitives.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\Microsoft.Win32.Registry.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\mscorlib.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\netstandard.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.AppContext.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Buffers.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Collections.Concurrent.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Collections.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Collections.Immutable.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Collections.NonGeneric.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Collections.Specialized.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.ComponentModel.Annotations.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.ComponentModel.DataAnnotations.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.ComponentModel.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.ComponentModel.EventBasedAsync.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.ComponentModel.Primitives.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.ComponentModel.TypeConverter.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Configuration.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Console.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Core.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Data.Common.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Data.DataSetExtensions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Data.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Diagnostics.Contracts.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Diagnostics.Debug.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Diagnostics.DiagnosticSource.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Diagnostics.EventLog.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Diagnostics.FileVersionInfo.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Diagnostics.Process.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Diagnostics.StackTrace.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Diagnostics.TextWriterTraceListener.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Diagnostics.Tools.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Diagnostics.TraceSource.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Diagnostics.Tracing.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Drawing.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Drawing.Primitives.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Dynamic.Runtime.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Formats.Asn1.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Globalization.Calendars.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Globalization.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Globalization.Extensions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.Compression.Brotli.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.Compression.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.Compression.FileSystem.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.Compression.ZipFile.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.FileSystem.AccessControl.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.FileSystem.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.FileSystem.DriveInfo.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.FileSystem.Primitives.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.FileSystem.Watcher.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.IsolatedStorage.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.MemoryMappedFiles.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.Pipelines.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.Pipes.AccessControl.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.Pipes.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.IO.UnmanagedMemoryStream.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Linq.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Linq.Expressions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Linq.Parallel.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Linq.Queryable.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Memory.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.Http.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.Http.Json.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.HttpListener.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.Mail.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.NameResolution.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.NetworkInformation.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.Ping.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.Primitives.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.Requests.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.Security.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.ServicePoint.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.Sockets.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.WebClient.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.WebHeaderCollection.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.WebProxy.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.WebSockets.Client.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Net.WebSockets.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Numerics.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Numerics.Vectors.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.ObjectModel.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Reflection.DispatchProxy.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Reflection.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Reflection.Emit.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Reflection.Emit.ILGeneration.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Reflection.Emit.Lightweight.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Reflection.Extensions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Reflection.Metadata.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Reflection.Primitives.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Reflection.TypeExtensions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Resources.Reader.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Resources.ResourceManager.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Resources.Writer.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.CompilerServices.Unsafe.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.CompilerServices.VisualC.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.Extensions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.Handles.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.InteropServices.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.Intrinsics.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.Loader.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.Numerics.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.Serialization.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.Serialization.Formatters.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.Serialization.Json.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.Serialization.Primitives.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Runtime.Serialization.Xml.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Security.AccessControl.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Security.Claims.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Security.Cryptography.Algorithms.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Security.Cryptography.Cng.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Security.Cryptography.Csp.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Security.Cryptography.Encoding.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Security.Cryptography.OpenSsl.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Security.Cryptography.Primitives.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Security.Cryptography.X509Certificates.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Security.Cryptography.Xml.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Security.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Security.Principal.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Security.Principal.Windows.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Security.SecureString.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.ServiceModel.Web.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.ServiceProcess.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Text.Encoding.CodePages.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Text.Encoding.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Text.Encoding.Extensions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Text.Encodings.Web.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Text.Json.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Text.RegularExpressions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Threading.Channels.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Threading.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Threading.Overlapped.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Threading.Tasks.Dataflow.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Threading.Tasks.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Threading.Tasks.Extensions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Threading.Tasks.Parallel.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Threading.Thread.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Threading.ThreadPool.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Threading.Timer.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Transactions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Transactions.Local.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.ValueTuple.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Web.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Web.HttpUtility.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Windows.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Xml.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Xml.Linq.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Xml.ReaderWriter.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Xml.Serialization.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Xml.XDocument.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Xml.XmlDocument.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Xml.XmlSerializer.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Xml.XPath.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\System.Xml.XPath.XDocument.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\WindowsBase.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll

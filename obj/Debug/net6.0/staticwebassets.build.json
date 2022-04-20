@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vg1bQm+Gfn9kWf3dyCrUjRd5JEOiXDhGeuHJ1CG0CZs=",
+  "Hash": "FOU7L912eFySFlyC7tgzzsNV5tFDB/D7vdzcNWXwOaA=",
   "Source": "Penkoff(ASP.NET Core)",
   "BasePath": "_content/Penkoff(ASP.NET Core)",
   "Mode": "Default",
@@ -102,12 +102,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\css\\Style.css",
+      "Identity": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\css\\style.css",
       "SourceId": "Penkoff(ASP.NET Core)",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\",
       "BasePath": "_content/Penkoff(ASP.NET Core)",
-      "RelativePath": "css/Style.css",
+      "RelativePath": "css/style.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,7 +116,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Style.css"
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "C:\\Labs\\Penkoff(ASP.NET Core)\\wwwroot\\favicon.ico",

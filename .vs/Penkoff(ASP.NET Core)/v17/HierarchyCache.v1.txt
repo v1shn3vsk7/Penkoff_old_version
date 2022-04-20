@@ -3,53 +3,67 @@ i:{00000000-0000-0000-0000-000000000000}:Penkoff(ASP.NET Core).sln
 ++Penkoff(ASP.NET Core)
 i:{00000000-0000-0000-0000-000000000000}:Penkoff(ASP.NET Core)
 ++Connected Services 
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1413
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1695
+++SQL Server Database (ConnectionStrings:DefaultConnection)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1732
+++SQL Server Database dependency with connectionId 'ConnectionStrings:DefaultConnection' is detected
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1733
+++SQL Server Express LocalDB (Local) (ConnectionStrings:UsersContext)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1731
 ++Dependencies
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1412
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1694
+++Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:analyzers
+++Frameworks
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:frameworks
+++Packages
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:packages
 ++Properties
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\properties\
 ++wwwroot
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\
-++css
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\
-++authorization.css
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\authorization.css
-++SignUpStyle.css
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\signupstyle.css
-++site.css
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\site.css
-++Style.css
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\style.css
-++images
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\images\
-++js
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\js\
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\
-++site.js
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\js\site.js
-++lib
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\
-++favicon.ico
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\favicon.ico
 ++Controllers
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\controllers\
 ++HomeController.cs
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\controllers\homecontroller.cs
+++Data
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\data\
+++DbInitializer.cs
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\data\dbinitializer.cs
+++UsersContext.cs
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\data\userscontext.cs
 ++Models
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\models\
 ++ErrorViewModel.cs
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\models\errorviewmodel.cs
 ++User.cs
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\models\user.cs
+++Pages
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\pages\
+++Users
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\pages\users\
+++Create.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\pages\users\create.cshtml
+++Delete.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\pages\users\delete.cshtml
+++Details.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\pages\users\details.cshtml
+++Edit.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\pages\users\edit.cshtml
+++Index.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\pages\users\index.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\home\index.cshtml
+++Index.cshtml.cs
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\pages\users\index.cshtml.cs
+++_ValidationScriptsPartial.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\pages\_validationscriptspartial.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\_validationscriptspartial.cshtml
 ++Views
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\
 ++Home
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\home\
 ++Authorization.cshtml
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\home\authorization.cshtml
-++Index.cshtml
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\home\index.cshtml
 ++Privacy.cshtml
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\home\privacy.cshtml
 ++SignUpPage.cshtml
@@ -66,19 +80,104 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\.gitignor
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\appsettings.json
 ++Program.cs
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\program.cs
-++No service dependencies discovered
-++Analyzers
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:analyzers
-++Frameworks
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:frameworks
-++Packages
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:packages
+++MessagePackAnalyzer
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\users\владимир\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.AspNetCore.Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\users\владимир\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\users\владимир\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\users\владимир\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\microsoft.netcore.app
+++Microsoft.AspNet.Razor (3.2.8)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1712
+++Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation (6.0.4)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1707
+++Microsoft.AspNetCore.Razor (2.2.0)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1713
+++Microsoft.AspNetCore.Razor.Runtime (2.2.0)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1708
+++Microsoft.EntityFrameworkCore.Sqlite (6.0.4)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1711
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.4)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1709
+++Microsoft.EntityFrameworkCore.Tools (6.0.4)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1714
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.3)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1715
+++Swashbuckle.AspNetCore (6.3.0)
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1710
 ++launchSettings.json
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\properties\launchsettings.json
+++serviceDependencies.json
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\properties\servicedependencies.json
+++css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\css\
+++images
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\images\
+++js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\js\
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\
+++favicon.ico
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\favicon.ico
+++Create.cshtml.cs
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\pages\users\create.cshtml.cs
+++Delete.cshtml.cs
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\pages\users\delete.cshtml.cs
+++Details.cshtml.cs
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\pages\users\details.cshtml.cs
+++Edit.cshtml.cs
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\pages\users\edit.cshtml.cs
+++_Layout.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\_layout.cshtml
+++Error.cshtml
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\error.cshtml
+++appsettings.Development.json
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\appsettings.development.json
+++serviceDependencies.local.json
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\properties\servicedependencies.local.json
+++authorization.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\authorization.css
+++SignUpStyle.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\signupstyle.css
+++site.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\site.css
+++style.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\css\style.css
 ++Chip.png
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\images\chip.png
 ++Iconmale.png
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\images\iconmale.png
+++site.js
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\js\site.js
 ++bootstrap
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\
 ++jquery
@@ -87,56 +186,8 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\l
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation\
 ++jquery-validation-unobtrusive
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation-unobtrusive\
-++_Layout.cshtml
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\_layout.cshtml
-++_ValidationScriptsPartial.cshtml
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\_validationscriptspartial.cshtml
-++Error.cshtml
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\error.cshtml
-++appsettings.Development.json
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\appsettings.development.json
-++MessagePackAnalyzer
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\users\владимир\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
-++Microsoft.AspNetCore.Analyzers
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
-++Microsoft.AspNetCore.App.Analyzers
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
-++Microsoft.AspNetCore.App.CodeFixes
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
-++Microsoft.AspNetCore.Components.Analyzers
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
-++Microsoft.AspNetCore.Mvc.Analyzers
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
-++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
-++Microsoft.CodeAnalysis.Analyzers
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\users\владимир\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
-++Microsoft.CodeAnalysis.CSharp.Analyzers
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\users\владимир\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
-++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
-++Microsoft.CodeAnalysis.NetAnalyzers
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
-++Microsoft.EntityFrameworkCore.Analyzers
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\users\владимир\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
-++Microsoft.Extensions.Logging.Generators
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
-++Microsoft.NET.Sdk.Razor.SourceGenerators
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
-++System.Text.Json.SourceGeneration
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.3\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
-++Microsoft.AspNetCore.App
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\microsoft.aspnetcore.app
-++Microsoft.NETCore.App
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\microsoft.netcore.app
-++Microsoft.EntityFrameworkCore.SqlServer (6.0.4)
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1521
-++Microsoft.EntityFrameworkCore.Tools (6.0.4)
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>2080
-++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.3)
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>2081
-++Swashbuckle.AspNetCore (6.3.0)
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>1522
+++_Layout.cshtml.css
+i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\_layout.cshtml.css
 ++dist
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery\dist\
@@ -150,8 +201,6 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\l
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation\license.md
 ++jquery.validate.unobtrusive.js
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
-++_Layout.cshtml.css
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\views\shared\_layout.cshtml.css
 ++jquery.js
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\jquery\dist\jquery.js
 ++additional-methods.js
@@ -256,19 +305,3 @@ i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\l
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 ++bootstrap.esm.min.js.map
 i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-++ApplicationContext.cs
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:c:\labs\penkoff(asp.net core)\models\applicationcontext.cs
-++dbContext.cs
-++SimpleContext.cs
-++Microsoft.EntityFrameworkCore.Sqlite (6.0.4)
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>2088
-++NewFolder
-++EntityTypeConfigurations
-++UserConfiguration.cs
-++SQL Server Database (ConnectionStrings:DefaultConnection)
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>2094
-++SQL Server Database dependency with connectionId 'ConnectionStrings:DefaultConnection' is detected
-i:{4312ed5f-2536-4921-a76e-f39502e0d003}:>2095
-++IUsersDbContext.cs
-++UsersDbContext.cs
-++DbInitializer.cs

@@ -578,3 +578,5 @@ C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\refs\WindowsBase.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\System.Web.Razor.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Penkoff.Storage.dll
+C:\Labs\Penkoff(ASP.NET Core)\bin\Debug\net6.0\Penkoff.Storage.pdb

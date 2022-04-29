@@ -38,10 +38,12 @@
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.4",
           "Microsoft.AspNetCore.Razor": "2.2.0",
           "Microsoft.AspNetCore.Razor.Runtime": "2.2.0",
+          "Microsoft.EntityFrameworkCore.Design": "6.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.4",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.3",
+          "Penkoff.Storage": "1.0.0",
           "Swashbuckle.AspNetCore": "6.3.0",
           "Microsoft.AspNetCore.Antiforgery": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "6.0.0.0",
@@ -3011,6 +3013,19 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
+      "Penkoff.Storage/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.4",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4"
+        },
+        "runtime": {
+          "Penkoff.Storage.dll": {}
+        },
+        "compile": {
+          "Penkoff.Storage.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/6.0.0.0": {
@@ -6092,6 +6107,11 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "Penkoff.Storage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/6.0.0.0": {
       "type": "referenceassembly",

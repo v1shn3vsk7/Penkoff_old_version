@@ -3372,6 +3372,21 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "Penkoff.Storage/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.4",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4"
+        },
+        "compile": {
+          "bin/placeholder/Penkoff.Storage.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Penkoff.Storage.dll": {}
+        }
       }
     }
   },
@@ -10201,6 +10216,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Penkoff.Storage/1.0.0": {
+      "type": "project",
+      "path": "../Penkoff.Storage/Penkoff.Storage.csproj",
+      "msbuildProject": "../Penkoff.Storage/Penkoff.Storage.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10209,10 +10229,12 @@
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 6.0.4",
       "Microsoft.AspNetCore.Razor >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Runtime >= 2.2.0",
+      "Microsoft.EntityFrameworkCore.Design >= 6.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.4",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.4",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.3",
+      "Penkoff.Storage >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.3.0"
     ]
   },
@@ -10242,7 +10264,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Labs\\Penkoff.Storage\\Penkoff.Storage.csproj": {
+              "projectPath": "C:\\Labs\\Penkoff.Storage\\Penkoff.Storage.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -10270,6 +10296,12 @@
           "Microsoft.AspNetCore.Razor.Runtime": {
             "target": "Package",
             "version": "[2.2.0, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.0.4, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",

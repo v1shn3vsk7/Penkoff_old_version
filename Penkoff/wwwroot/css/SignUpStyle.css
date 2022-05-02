@@ -1,0 +1,137 @@
+﻿body {
+    margin: 0;
+    font-family: 'SF Pro Display';
+    font-size: 14px;
+    line-height: 1.6;
+    color: #176FFA;
+    background-color: #FBFBFB;
+}
+
+.h1 {
+    position: absolute;
+    width: 119px;
+    height: 50px;
+    left: 700px;
+    top: 50px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: #176FFA;
+}
+
+h2 {
+    position: relative;
+    left: 40%;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 43px;
+    color: #000000;
+}
+
+.signUpBox {
+    width: 500px;
+    height: 450px;
+    background: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.signUpBox input {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.signUpBox input[type="text"],
+input[type="password"]  {
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #3F3F3F;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.submit_button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.25rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    left: 37%;
+    overflow: hidden;
+    z-index: 1;
+    width: 60px;
+    height: 3px;
+}
+
+.submit_button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #176FFA;
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+.submit_button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #16E3FA;
+    transition: all 0.4s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.submit_button:hover {
+    color: #fff;
+}
+
+.submit_button:hover:before {
+    width: 100%;
+}
+
+.tmp {
+    position: absolute;
+    top: 92%;
+    left: 30%;
+    display: inline;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    font-size: 15px;
+    line-height: normal;
+    width: 600px;
+    color: #9B9B9B;
+}
+
+
+

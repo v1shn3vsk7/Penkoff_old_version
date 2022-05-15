@@ -40,6 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Penkoff.Logic\Penkoff.Logic.csproj" />
     <ProjectReference Include="..\Penkoff.Storage\Penkoff.Storage.csproj" />
   </ItemGroup>
 

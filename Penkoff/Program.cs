@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Penkoff.Logic.Users;
 using Penkoff.Storage;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+builder.Services.AddScoped<IUserManager, UserManager>();
 
 var connectionString = builder.Configuration.GetConnectionString("DbConnection");
 builder.Services.AddDbContext<UsersContext>(parameter => parameter.UseSqlServer(connectionString));

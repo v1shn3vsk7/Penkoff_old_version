@@ -1,0 +1,61 @@
+﻿@model Penkoff.Storage.Entities.User;
+
+@*<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="~/css/SignUpStyle.css">
+    <title>Sign up</title>
+    </head>
+
+    <body>
+    <!--<a class="h1" asp-action="Index" asp-controller="home">Penkoff</a> -->
+    <div class="signUpBox">
+    <div id="rectangle"></div>
+    <form>
+    <h2>Sign up</h2>
+    <input type="text" name="" placeholder="First name" />
+    <input type="text" name="" placeholder="Second name" />
+    <input type="text" name="" placeholder="Login" />
+    <input type="password" name="" placeholder="Password" />
+    <input type="password" name="" placeholder="Confirm your password" />
+    <a href="#" class="submit_button">Submit</a>
+
+    </form>
+    </div>
+    <div class="tmp">
+    <h4>©2022 Penkoff, Moscow, Akademika Scriabin Street 25/1 building 4</h4>
+    </div>
+
+    </body>*@
+
+<body>
+    <form asp-action="create" asp-controller="SignUp">
+        <p>
+            <label asp-for="FirstName">FirstName</label><br />
+            <input type="text" asp-for="FirstName" />
+        </p>
+
+         <p>
+            <label asp-for="LastName">LastName</label><br />
+            <input type="text" asp-for="LastName" />
+        </p>
+
+         <p>
+            <label asp-for="Login">Login</label><br />
+            <input type="text" asp-for="Login" />
+        </p>
+
+         <p>
+            <label asp-for="Password">Password</label><br />
+            <input type="password" asp-for="Password" />
+        </p>
+
+        <p>
+        <input type="submit" value="Sign up" />
+    </p>
+    </form>
+</body>
+
+
+

@@ -30,32 +30,127 @@
     </body>*@
 
 <body>
-    <form asp-action="create" asp-controller="SignUp">
+    <div class="signUpBox">
+        <div id="rectangle"></div>
+        <form asp-action="create" asp-controller="SignUp">
+            <h2>Sign up</h2>
         <p>
-            <label asp-for="FirstName">FirstName</label><br />
-            <input type="text" asp-for="FirstName" />
-        </p>
-
-         <p>
-            <label asp-for="LastName">LastName</label><br />
-            <input type="text" asp-for="LastName" />
-        </p>
-
-         <p>
-            <label asp-for="Login">Login</label><br />
-            <input type="text" asp-for="Login" />
-        </p>
-
-         <p>
-            <label asp-for="Password">Password</label><br />
-            <input type="password" asp-for="Password" />
+            @*<label asp-for="FirstName">FirstName</label><br />*@
+            <input type="text" placeholder="First name" asp-for="FirstName" />
         </p>
 
         <p>
-        <input type="submit" value="Sign up" />
-    </p>
+            @*<label asp-for="LastName"></label><br />*@
+            <input type="text" placeholder="Last name:" asp-for="LastName" />
+        </p>
+
+        <p>
+            @*<label asp-for="Login">Login</label><br />*@
+            <input type="text" placeholder="Login:" asp-for="Login" />
+        </p>
+
+        <p>
+            @*<label asp-for="Password">Password</label><br />*@
+            <input type="password" placeholder="Password:" asp-for="Password" />
+        </p>
+
+        <p1>
+            <input type="submit" value="Sign up" class="submit_button"/>
+        </p1>
     </form>
+    </div>
+
+    <div class="tmp">
+    <h4>©2022 Penkoff, Moscow, Akademika Scriabin Street 25/1 building 4</h4>
+    </div>
+
+    <style>
+    h2 {
+    position: relative;
+    left: 40%;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 43px;
+    color: #000000;
+    }
+
+    .signUpBox {
+    width: 500px;
+    height: 450px;
+    background: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.signUpBox input[type="text"],
+input[type="password"]  {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    margin-bottom: 20px;
+
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #3F3F3F;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.submit_button {
+    width: 30%;
+    position: relative;
+    left: 35%;
+    /*height: 30px;*/
+    background-color: #176FFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'SF Pro Display'; 
+    font-size: 16px;
+    border-radius: 10rem;
+}
+
+.submit_button:hover {
+    background-color: #4CAF50; /* Green */
+    color: black;
+    transition: color .4s linear;
+}
+
+
+    
+
+    .tmp {
+    position: absolute;
+    top: 92%;
+    left: 30%;
+    display: inline;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    font-size: 15px;
+    line-height: normal;
+    width: 600px;
+    color: #9B9B9B;
+    }
+
+</style>
+
 </body>
+
+
 
 
 

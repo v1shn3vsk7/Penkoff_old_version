@@ -1,7 +1,7 @@
 ﻿@model Penkoff.Storage.Entities.User;
 
 <body>
-    <a class="h1" asp-action="Index" asp-controller="home">Penkoff</a>
+    <a class="h1" asp-action="Index" asp-controller="home">PENKOFF</a>
 
     <div class="loginbox">
         <div id="rectangle"></div>
@@ -34,11 +34,11 @@
     position: absolute;
     width: 119px;
     height: 50px;
-    left: 700px;
-    top: 50px;
-    font-family: 'SF Pro Display';
+    left: 675px;
+    top: 100px;
+    font-family: 'Pragmatica';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 36px;
     line-height: 43px;
     color: #176FFA;
@@ -55,13 +55,15 @@ h2 {
     color: #000000;
 }
 
+
+
 h3 {
-    position: relative;
+    position: absolute;
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
-    top: -45px;
-    left: -10%;
+    top: 320px;
+    left: 15%;
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 400;
@@ -100,57 +102,28 @@ input[type="password"] {
 }
 
 .submit_button {
-    display: inline-block;
-    padding: 1.25rem 1.25rem;
-    border-radius: 10rem;
-    color: #fff;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    top: 77%;
+    background-color: #176FFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
-    letter-spacing: 0.15rem;
-    transition: all 0.3s;
-    position: relative;
-    left: 37%;
-    overflow: hidden;
-    z-index: 1;
-    width: 60px;
-    height: 3px;
+    vertical-align: central;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'SF Pro Display'; 
+    font-size: 16px;
+    border-radius: 10rem;
 }
 
-    .submit_button:after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #176FFA;
-        border-radius: 10rem;
-        z-index: -2;
-    }
-
-    .submit_button:before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0%;
-        height: 100%;
-        background-color: #16E3FA;
-        transition: all 0.4s;
-        border-radius: 10rem;
-        z-index: -1;
-    }
-
-    .submit_button:hover {
-        color: #fff;
-    }
-
-        .submit_button:hover:before {
-            width: 100%;
-        }
+.submit_button:hover {
+    background-color: #16FA9C; 
+    color: black;
+    transition: color .5s linear;
+}
 
 /* optional reset for presentation */
 * {
@@ -177,7 +150,7 @@ span {
 .nav_link {
     position: absolute;
     left: 67%;
-    top: 88%;
+    top: 323px;
     /*display: inline-block; */
     /*vertical-align: top; */
     color: #828892;

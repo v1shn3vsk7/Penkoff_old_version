@@ -30,6 +30,9 @@
     </body>*@
 
 <body>
+    
+    <a class="h1" asp-action="Index" asp-controller="home">PENKOFF</a>
+
     <div class="signUpBox">
         <div id="rectangle"></div>
         <form asp-action="create" asp-controller="SignUp">
@@ -65,6 +68,21 @@
     </div>
 
     <style>
+    .h1 {
+    position: absolute;
+    text-decoration: none;
+    width: 119px;
+    height: 50px;
+    left: 687px;
+    top: 65px;
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43px;
+    color: #176FFA;
+    }
+
     h2 {
     position: relative;
     left: 40%;
@@ -107,9 +125,9 @@ input[type="password"]  {
 }
 .submit_button {
     width: 30%;
-    position: relative;
+    position: absolute;
     left: 35%;
-    /*height: 30px;*/
+    top: 380px;
     background-color: #176FFA;
     border: none;
     color: white;
@@ -123,15 +141,12 @@ input[type="password"]  {
 }
 
 .submit_button:hover {
-    background-color: #4CAF50; /* Green */
+    background-color: #16FA9C;
     color: black;
-    transition: color .4s linear;
+    transition: color .5s linear;
 }
 
-
-    
-
-    .tmp {
+.tmp {
     position: absolute;
     top: 92%;
     left: 30%;
@@ -144,7 +159,7 @@ input[type="password"]  {
     line-height: normal;
     width: 600px;
     color: #9B9B9B;
-    }
+}
 
 </style>
 

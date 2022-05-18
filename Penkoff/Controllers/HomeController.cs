@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Penkoff.Storage;
 using Penkoff.Storage.Entities;
 using Penkoff_ASP.NET_Core_.Models;
@@ -46,25 +47,36 @@ public class HomeController : Controller
         return View();
     }
 
-    [HttpPost]
-
-    public ActionResult Login(User user)
+    public IActionResult Account()
     {
-        if (user.Login == null || user.Password == null || //check for empty fields
-            (user.Login == null && user.Password == null))
+        int userId;
+
+        if (HttpContext.Session.GetInt32("Id") != null)
         {
-            //print error
+            userId = (int)HttpContext.Session.GetInt32("Id");
+
+            return View();
         }
 
-
-        User? attemp = null;
-
-        attemp = db.Users.FirstOrDefault(u => u.Login == user.Login && u.Password == user.Password);
-
-        if (attemp is not null)
+        else
         {
-            //FormsAuthentication.SetAuthCookie(model.Name, true);
-            return View("~/Views/Home/Index.cshtml"); //сделать переход в аккаунт
+            return View("~/Views/Home/Authorization.cshtml"); //direct user to auth page if he is not logged in
+        }
+
+    }
+
+    [HttpPost]
+    public ActionResult Login(User user)
+    {
+        User? attempt = null;
+
+        attempt = db.Users.FirstOrDefault(u => u.Login == user.Login && u.Password == user.Password);
+
+        if (attempt is not null)
+        {
+            HttpContext.Session.SetInt32("Id", attempt.Id);
+
+            return View("~/Views/Home/Account.cshtml");
         }
 
         else
@@ -74,6 +86,7 @@ public class HomeController : Controller
         }
 
     }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

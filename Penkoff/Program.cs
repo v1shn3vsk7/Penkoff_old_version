@@ -9,6 +9,17 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddScoped<IUserManager, UserManager>();
 
+
+builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(20);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+
 var connectionString = builder.Configuration.GetConnectionString("DbConnection");
 builder.Services.AddDbContext<UsersContext>(parameter => parameter.UseSqlServer(connectionString));
 
@@ -27,7 +38,9 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
+//app.UseAuthorization();
+
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",

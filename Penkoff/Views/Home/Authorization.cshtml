@@ -1,5 +1,7 @@
 ﻿@model Penkoff.Storage.Entities.User;
-
+@{
+    Layout = null;
+}
 <body>
     <a class="h1" asp-action="Index" asp-controller="home">PENKOFF</a>
 
@@ -46,7 +48,7 @@
 
 h2 {
     position: relative;
-    left: 0%;
+    left: 40%;
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 300;
@@ -54,8 +56,6 @@ h2 {
     line-height: 43px;
     color: #000000;
 }
-
-
 
 h3 {
     position: absolute;
@@ -88,7 +88,7 @@ h3 {
 .loginbox input[type="text"],
 input[type="password"] {
     position: relative;
-    left: 0%;
+    left: 5%;
     width: 90%;
     margin-bottom: 20px;
     background: transparent;
@@ -120,7 +120,7 @@ input[type="password"] {
 }
 
 .submit_button:hover {
-    background-color: #16FA9C; 
+    background-color: #16FAEA; 
     color: black;
     transition: color .5s linear;
 }

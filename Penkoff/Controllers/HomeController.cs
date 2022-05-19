@@ -55,18 +55,25 @@ public class HomeController : Controller
         {
             userId = (int)HttpContext.Session.GetInt32("Id");
 
-            return View();
+            var user = db.Users.Find(userId);
+
+            if (user.PhoneNumber == null) //directs user to verification page if he didnt verificate phone number
+            {
+                return View("~/Views/Home/PhoneVerification.cshtml");
+            }
+
+                return View("~/Views/Home/Account.cshtml");
         }
 
         else
         {
-            return View("~/Views/Home/Authorization.cshtml"); //direct user to auth page if he is not logged in
+            return View("~/Views/Home/Authorization.cshtml"); //directs user to auth page if he is not logged in
         }
 
     }
 
     [HttpPost]
-    public ActionResult Login(User user)
+    public IActionResult Login(User user)
     {
         User? attempt = null;
 
@@ -76,7 +83,7 @@ public class HomeController : Controller
         {
             HttpContext.Session.SetInt32("Id", attempt.Id);
 
-            return View("~/Views/Home/Account.cshtml");
+            return Account();
         }
 
         else

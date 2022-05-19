@@ -1,0 +1,134 @@
+﻿@model Penkoff.Storage.Entities.User;
+
+@{
+    Layout = null;
+}
+
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="http://bootstraptema.ru/plugins/2016/b-f-h/bootstrap-formhelpers.min.css" /> @*change later!!*@
+</head>
+
+<body>
+    <script src="~/lib/jquery/phone-validation/JavaScript.js"></script>
+
+    <div class="signUpBox">
+        <div id="rectangle"></div>
+        <form asp-action="verificate" asp-controller="home">
+            <h2>Verificate your phone number</h2>
+            <p>
+                @*<input type="text" class="form-control bfh-phone" data-format="+7(ddd)ddd-dddd" asp-for="PhoneNumber" />*@
+                <input type="text" id="inputPhone" value="+7(___)___-__-__"  asp-for="PhoneNumber" required />
+            </p> 
+
+            <script>
+    let inputPhone=document.getElementById("inputPhone");
+    inputPhone.oninput=()=>phoneMask(inputPhone)
+    function phoneMask(inputEl) {
+        let patStringArr = "+7(___)___-__-__".split('');
+        let arrPush = [3, 4, 5, 7, 8, 9, 11, 12, 14, 15]
+        let val = inputEl.value;
+        let arr = val.replace(/\D+/g, "").split('').splice(1);
+        let n;
+        let ni;
+        arr.forEach((s, i) => {
+            n = arrPush[i];
+            patStringArr[n] = s
+            ni = i
+        });
+        arr.length < 10 ? inputEl.style.color = 'red' : inputEl.style.color = 'green';
+        inputEl.value = patStringArr.join('');
+        n ? inputEl.setSelectionRange(n + 1, n + 1) : inputEl.setSelectionRange(17, 17)
+    }
+</script>
+
+            <p1>
+            <input type="submit" value="Send SMS" class="submit_button"/>
+        </p1>
+        </form>
+    </div>
+
+    <div class="tmp">
+    <h4>©2022 Penkoff, Moscow, Akademika Scriabin Street 25/1 building 4</h4>
+    </div>
+
+    <style>
+        h2 {
+    position: relative;
+    left: 12%;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 43px;
+    color: #000000;
+    }
+
+    .signUpBox {
+    width: 500px;
+    height: 450px;
+    background: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    }
+
+    .signUpBox input[type="text"] {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    margin-bottom: 20px;
+
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #3F3F3F;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 12px;
+    }
+
+    .submit_button {
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    top: 380px;
+    background-color: #176FFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'SF Pro Display'; 
+    font-size: 16px;
+    border-radius: 10rem;
+}
+
+.submit_button:hover {
+    background-color: #16FAEA;
+    color: black;
+    transition: color .5s linear;
+}
+
+.tmp {
+    position: absolute;
+    top: 92%;
+    left: 30%;
+    display: inline;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    font-size: 15px;
+    line-height: normal;
+    width: 600px;
+    color: #9B9B9B;
+}
+    </style>
+</body>

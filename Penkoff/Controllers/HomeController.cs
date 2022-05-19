@@ -4,6 +4,7 @@ using Penkoff.Storage;
 using Penkoff.Storage.Entities;
 using Penkoff_ASP.NET_Core_.Models;
 using System.Diagnostics;
+using SendingEmail;
 
 namespace Penkoff_ASP.NET_Core_.Controllers;
 
@@ -92,6 +93,19 @@ public class HomeController : Controller
             return View();
         }
 
+    }
+
+    [HttpPost]
+    public IActionResult Verification(User user)
+    {
+        User currentUser = db.Users.Find((int)HttpContext.Session.GetInt32("Id")); //get current user
+
+        currentUser.PhoneNumber = user.PhoneNumber;
+        db.SaveChanges();
+
+        Service.SendEmail("v1shn3vsk7@inbox.ru", 228322);
+
+        return View("~/Views/Home/Account.cshtml");
     }
 
 

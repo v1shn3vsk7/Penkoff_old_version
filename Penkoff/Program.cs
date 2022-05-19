@@ -1,11 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Penkoff.Logic.Users;
 using Penkoff.Storage;
+using SendingEmail;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<Service>(); //Email sender
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddScoped<IUserManager, UserManager>();
 

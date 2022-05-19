@@ -16,7 +16,6 @@ public class Service
         try
         {
             MailMessage message = new();
-            //message.IsBodyHtml = true;
             message.From = new MailAddress("penkoff.verificati0n@gmail.com", "Penkoff Verification");
             message.To.Add(receiver);
             message.Subject = "Verification";
@@ -35,13 +34,8 @@ public class Service
         }
         catch(Exception e)
         {
-            //_logger.LogError(e.GetBaseException().Message);
+
         }
-
-    }
-
-    public void SendEmailCustom()
-    {
 
     }
 }

@@ -96,6 +96,12 @@ public class HomeController : Controller
     }
 
     [HttpPost]
+    public void ValidateCode(int code)
+    {
+        string inputCode = Request.Form["code"];
+    }
+
+    [HttpPost]
     public IActionResult Verification(User user)
     {
         User currentUser = db.Users.Find((int)HttpContext.Session.GetInt32("Id")); //get current user
@@ -103,7 +109,13 @@ public class HomeController : Controller
         currentUser.PhoneNumber = user.PhoneNumber;
         db.SaveChanges();
 
-        Service.SendEmail("v1shn3vsk7@inbox.ru", 228322);
+        string inputEmail = user.Mail;
+        Random rn = new();
+        int verificationCode = rn.Next(100000, 999999);
+
+        Service.SendEmail(inputEmail, verificationCode);
+
+        ValidateCode(verificationCode);
 
         return View("~/Views/Home/Account.cshtml");
     }

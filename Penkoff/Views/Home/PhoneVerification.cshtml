@@ -49,8 +49,10 @@
         </p1>
         </form>
 
-        <input type="text" placeholder="Verification code:" name="code" id="anotherTextBox" runat="server" />
-        <button type="button" class="submit_code" asp-action="validatecode" asp-controller="home">Verify</button>
+        <form asp-action="validatecode" asp-controller="home">
+         <input type="text" placeholder="Verification code:" name="code" id="anotherTextBox" runat="server" />
+        <input type="submit" class="submit_code" value="Submit"/>
+        </form>
         
     </div>
 

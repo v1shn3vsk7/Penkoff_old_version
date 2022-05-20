@@ -58,7 +58,7 @@ public class HomeController : Controller
 
             var user = db.Users.Find(userId);
 
-            if (user.PhoneNumber == null) //directs user to verification page if he didnt verificate phone number
+            if (user.Mail == null) //directs user to verification page if he didnt verificate email
             {
                 return View("~/Views/Home/PhoneVerification.cshtml");
             }
@@ -96,9 +96,24 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public void ValidateCode(int code)
+    public IActionResult ValidateCode()
     {
         string inputCode = Request.Form["code"];
+
+        if (int.Parse(inputCode) == (int)HttpContext.Session.GetInt32("verificationCode"))
+        {
+            User currentUser = db.Users.Find((int)HttpContext.Session.GetInt32("Id")); //get current user
+
+            currentUser.PhoneNumber = HttpContext.Session.GetString("phone");
+            currentUser.Mail = HttpContext.Session.GetString("mail");
+            db.SaveChanges();
+
+            return View("~/Views/Home/Account.cshtml");
+        }
+        else
+        {
+            return View("~/Views/Home/PhoneVerification.cshtml");
+        }
     }
 
     [HttpPost]
@@ -106,18 +121,20 @@ public class HomeController : Controller
     {
         User currentUser = db.Users.Find((int)HttpContext.Session.GetInt32("Id")); //get current user
 
-        currentUser.PhoneNumber = user.PhoneNumber;
-        db.SaveChanges();
+        //currentUser.PhoneNumber = user.PhoneNumber;
+        //db.SaveChanges();
 
-        string inputEmail = user.Mail;
+        //string inputEmail = user.Mail;
         Random rn = new();
-        int verificationCode = rn.Next(100000, 999999);
+        var verificationCode = rn.Next(100000, 999999);
+        HttpContext.Session.SetInt32("verificationCode", verificationCode);
 
-        Service.SendEmail(inputEmail, verificationCode);
+        Service.SendEmail(user.Mail, verificationCode);
 
-        ValidateCode(verificationCode);
+        HttpContext.Session.SetString("mail", user.Mail);
+        HttpContext.Session.SetString("phone", user.PhoneNumber);
 
-        return View("~/Views/Home/Account.cshtml");
+        return View("~/Views/Home/PhoneVerification.cshtml");
     }
 
 

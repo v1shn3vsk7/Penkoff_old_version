@@ -1,9 +1,12 @@
-﻿@model Penkoff.Storage.Entities.User;
+﻿@model Penkoff_ASP.NET_Core_.Models.LoginViewModel;
 @{
     Layout = null;
 }
 <body>
-    <a class="h1" asp-action="Index" asp-controller="home">PENKOFF</a>
+    <h5>@Model.result</h5>
+
+    @*<a class="h1" asp-action="Index" asp-controller="home">PENKOFF</a>*@
+    <h1><a class="h1" asp-action="Index" asp-controller="home">PENKOFF</a></h1>
 
     <div class="loginbox">
         <div id="rectangle"></div>
@@ -11,11 +14,11 @@
             <h2>Sign in</h2>
 
             <p>
-                <input required type="text" placeholder="Login:" asp-for="Login" />
+                <input required type="text" placeholder="Login:" asp-for="user.Login"/>
             </p>
 
             <p>
-                <input required type="text" placeholder="Password:" asp-for="Password" />
+                <input required type="text" placeholder="Password:" asp-for="user.Password" />
             </p>
 
             <p>
@@ -34,16 +37,19 @@
     <style>
 .h1 {
     position: absolute;
-    width: 119px;
-    height: 50px;
-    left: 675px;
-    top: 100px;
+    height: 10%;
+    left: 40%;
     font-family: 'Pragmatica';
     font-style: normal;
     font-weight: 800;
     font-size: 36px;
-    line-height: 43px;
     color: #176FFA;
+}
+
+h1 {
+    position: absolute;
+    margin-top: 7%;
+    left: 44%;
 }
 
 h2 {
@@ -70,6 +76,14 @@ h3 {
     font-size: 20px;
     line-height: 30px;
     color: #000000;
+}
+
+h5 {
+    position: absolute;
+    color: #e3101b;
+    font-size: 30px;
+    height: 8%;
+    left: 38%;
 }
 
 .loginbox {

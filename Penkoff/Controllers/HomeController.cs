@@ -68,17 +68,17 @@ public class HomeController : Controller
 
         else
         {
-            return View("~/Views/Home/Authorization.cshtml"); //directs user to auth page if he is not logged in
+            return View("~/Views/Home/Authorization.cshtml", new LoginViewModel { result=""}); //directs user to auth page if he is not logged in
         }
 
     }
 
     [HttpPost]
-    public IActionResult Login(User user)
+    public IActionResult Login(LoginViewModel model)
     {
         User? attempt = null;
 
-        attempt = db.Users.FirstOrDefault(u => u.Login == user.Login && u.Password == user.Password);
+        attempt = db.Users.FirstOrDefault(u => u.Login == model.user.Login && u.Password == model.user.Password);
 
         if (attempt is not null)
         {
@@ -89,8 +89,7 @@ public class HomeController : Controller
 
         else
         {
-            //return error
-            return View();
+            return View("~/Views/Home/Authorization.cshtml", new LoginViewModel { user = model.user, result= "Incorrect login or password" });
         }
 
     }

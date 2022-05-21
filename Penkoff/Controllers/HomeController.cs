@@ -39,10 +39,10 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult SignUpPage()
+    /*public IActionResult SignUpPage()
     {
-        return View();
-    }
+        return View("~/Views/Home/SignUp/SignUpPage.cshtml", new SignUpViewModel { result = "" });
+    }*/
     public IActionResult Privacy()
     {
         return View();
@@ -77,7 +77,6 @@ public class HomeController : Controller
     public IActionResult Login(LoginViewModel model)
     {
         User? attempt = null;
-
         attempt = db.Users.FirstOrDefault(u => u.Login == model.user.Login && u.Password == model.user.Password);
 
         if (attempt is not null)

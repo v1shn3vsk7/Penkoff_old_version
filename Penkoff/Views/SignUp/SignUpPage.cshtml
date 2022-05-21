@@ -1,38 +1,11 @@
-﻿@model Penkoff.Storage.Entities.User;
+﻿@model Penkoff_ASP.NET_Core_.Models.SignUpViewModel;
 @{
     Layout = null;
 }
-@*<!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="~/css/SignUpStyle.css">
-    <title>Sign up</title>
-    </head>
-
-    <body>
-    <!--<a class="h1" asp-action="Index" asp-controller="home">Penkoff</a> -->
-    <div class="signUpBox">
-    <div id="rectangle"></div>
-    <form>
-    <h2>Sign up</h2>
-    <input type="text" name="" placeholder="First name" />
-    <input type="text" name="" placeholder="Second name" />
-    <input type="text" name="" placeholder="Login" />
-    <input type="password" name="" placeholder="Password" />
-    <input type="password" name="" placeholder="Confirm your password" />
-    <a href="#" class="submit_button">Submit</a>
-
-    </form>
-    </div>
-    <div class="tmp">
-    <h4>©2022 Penkoff, Moscow, Akademika Scriabin Street 25/1 building 4</h4>
-    </div>
-
-    </body>*@
 
 <body>
-    
+    <h5>@Model.result</h5>
+
     <a class="h1" asp-action="Index" asp-controller="home">PENKOFF</a>
 
     <div class="signUpBox">
@@ -41,22 +14,22 @@
             <h2>Sign up</h2>
         <p>
             @*<label asp-for="FirstName">FirstName</label><br />*@
-            <input required type="text" placeholder="First name:" asp-for="FirstName" />
+            <input required type="text" placeholder="First name:" asp-for="user.FirstName" />
         </p>
 
         <p>
             @*<label asp-for="LastName"></label><br />*@
-            <input required type="text" placeholder="Last name:" asp-for="LastName" />
+            <input required type="text" placeholder="Last name:" asp-for="user.LastName" />
         </p>
 
         <p>
             @*<label asp-for="Login">Login</label><br />*@
-            <input required type="text" placeholder="Login:" asp-for="Login" />
+            <input required type="text" placeholder="Login:" asp-for="user.Login" />
         </p>
 
         <p>
             @*<label asp-for="Password">Password</label><br />*@
-            <input required type="password" placeholder="Password:" asp-for="Password" />
+            <input required type="password" placeholder="Password:" asp-for="user.Password" />
         </p>
 
         <p1>
@@ -94,6 +67,14 @@
     font-size: 30px;
     line-height: 43px;
     color: #000000;
+    }
+
+    h5 {
+    position: absolute;
+    color: #e3101b;
+    font-size: 30px;
+    height: 3%;
+    left: 38%;
     }
 
     .signUpBox {

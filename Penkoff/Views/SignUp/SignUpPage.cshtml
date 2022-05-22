@@ -13,23 +13,19 @@
         <form asp-action="create" asp-controller="SignUp">
             <h2>Sign up</h2>
         <p>
-            @*<label asp-for="FirstName">FirstName</label><br />*@
-            <input required type="text" placeholder="First name:" asp-for="user.FirstName" />
+            <input type="text" placeholder="First name:" required asp-for="user.FirstName" />
         </p>
 
         <p>
-            @*<label asp-for="LastName"></label><br />*@
-            <input required type="text" placeholder="Last name:" asp-for="user.LastName" />
+            <input type="text" placeholder="Last name:" required asp-for="user.LastName" />
         </p>
 
         <p>
-            @*<label asp-for="Login">Login</label><br />*@
-            <input required type="text" placeholder="Login:" asp-for="user.Login" />
+            <input type="text" placeholder="Login:" required asp-for="user.Login" />
         </p>
 
         <p>
-            @*<label asp-for="Password">Password</label><br />*@
-            <input required type="password" placeholder="Password:" asp-for="user.Password" />
+            <input type="password" placeholder="Password:" required minlength="8" asp-for="user.Password" />
         </p>
 
         <p1>
@@ -43,6 +39,9 @@
     </div>
 
     <style>
+    body {
+    background-color: #FBFBFB;
+    }
     .h1 {
     position: absolute;
     text-decoration: none;

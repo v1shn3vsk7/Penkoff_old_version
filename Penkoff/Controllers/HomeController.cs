@@ -62,10 +62,12 @@ public class HomeController : Controller
             {
                 return View("~/Views/Home/PhoneVerification.cshtml");
             }
-
+            else
+            {
                 return View("~/Views/Home/Account.cshtml");
-        }
+            }
 
+        }
         else
         {
             return View("~/Views/Home/Authorization.cshtml", new LoginViewModel { result=""}); //directs user to auth page if he is not logged in
@@ -85,7 +87,6 @@ public class HomeController : Controller
 
             return Account();
         }
-
         else
         {
             return View("~/Views/Home/Authorization.cshtml", new LoginViewModel { user = model.user, result= "Incorrect login or password" });

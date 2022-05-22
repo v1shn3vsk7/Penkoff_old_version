@@ -18,13 +18,13 @@ public class User
     public string? Mail { get; set; } = null;
 
     //[ForeignKey(nameof(Id))]
-    public RubleAccount RubleAccount { get; set; }
+    public RubleAccount RubleAccount { get; set; } 
 
     //[ForeignKey(nameof(Id))]
     public DollarAccount DollarAccount { get; set; }
 
     //[ForeignKey(nameof(Id))]
-    public EuroAccount EuroAccount { get; set; }
+    public EuroAccount EuroAccount { get; set; } 
 
 }
 

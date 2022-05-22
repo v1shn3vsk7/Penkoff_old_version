@@ -41,6 +41,14 @@ public class SignUpController : Controller
             return View("~/Views/SignUp/SignUpPage.cshtml", new SignUpViewModel {user = model.user, result = "Account with this login already exists" });
         }
 
+        var dollarAccount = new DollarAccount();
+        var euroAccount = new EuroAccount();
+        var rubleAccount = new RubleAccount();
+
+        model.user.DollarAccount = dollarAccount;
+        model.user.EuroAccount = euroAccount;
+        model.user.RubleAccount = rubleAccount;
+
         db.Users.Add(model.user);
         await db.SaveChangesAsync();
 

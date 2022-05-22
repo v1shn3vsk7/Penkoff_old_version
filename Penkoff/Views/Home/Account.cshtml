@@ -1,11 +1,15 @@
-﻿@model Penkoff.Storage.Entities.User;
+﻿@model Penkoff_ASP.NET_Core_.Models.AccountViewModel;
 
 <body>
     <div class="currency_picker">
         <div id="rectangle"></div>
-
+        <a class="ruble_switcher" asp-action="setrubleaccount" asp-controller="home">Ruble currency</a>
+        <a class="dollar_switcher" asp-action="setdollaraccount" asp-controller="home">Dollar currency</a>
+        <a class="euro_switcher" asp-action="seteuroaccount" asp-controller="home">Euro currency</a>
+        
     </div>
-    
+    <h5>@Model.currentBalance</h5>
+    <hr />
 </body>
 
 <style>
@@ -21,5 +25,49 @@ body {
     border: 1px solid #000000;
     border-radius: 20px;
     top: 20%;
+}
+
+hr {
+    position: absolute;
+    width: 807px;
+    height: 0px;
+    left: 500px;
+    top: 313.97px;
+    background-color: #000000;
+
+border: 0.5px solid #000000;
+}
+
+h5 {
+position: absolute;
+width: 807px;
+height: 72px;
+left: 500px;
+top: 156px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 600;
+font-size: 60px;
+line-height: 72px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+
+.ruble_switcher {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: left;
+    width: 100px;
+    color: #5C5757;
+
+}
+.ruble_switcher:hover {
+    color: #16FAEA;
+}
+
 }
 </style>

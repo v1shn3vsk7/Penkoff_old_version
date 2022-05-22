@@ -5,6 +5,7 @@ using Penkoff.Storage.Entities;
 using Penkoff_ASP.NET_Core_.Models;
 using System.Diagnostics;
 using SendingEmail;
+using Microsoft.EntityFrameworkCore;
 
 namespace Penkoff_ASP.NET_Core_.Controllers;
 
@@ -52,27 +53,33 @@ public class HomeController : Controller
     {
         int userId;
 
-        if (HttpContext.Session.GetInt32("Id") != null)
+        if (HttpContext.Session.GetInt32("Id") == null)
         {
-            userId = (int)HttpContext.Session.GetInt32("Id");
+            return View("~/Views/Home/Authorization.cshtml", //directs user to auth page if he is not logged in
+                new LoginViewModel { result = "" });
+        }
 
-            var user = db.Users.Find(userId);
+        userId = (int)HttpContext.Session.GetInt32("Id");
 
-            if (user.Mail == null) //directs user to verification page if he didnt verificate email
-            {
-                return View("~/Views/Home/PhoneVerification.cshtml");
-            }
-            else
-            {
-                return View("~/Views/Home/Account.cshtml");
-            }
+        var user = db.Users.Include(u => u.RubleAccount)
+            .Include(u => u.DollarAccount)
+            .Include(u => u.EuroAccount).FirstOrDefault(u => u.Id == userId);
 
+        if (user.Mail == null) //directs user to verification page if he didnt verificate email
+        {
+            return View("~/Views/Home/PhoneVerification.cshtml");
         }
         else
         {
-            return View("~/Views/Home/Authorization.cshtml", new LoginViewModel { result=""}); //directs user to auth page if he is not logged in
+            return View("~/Views/Home/Account.cshtml",
+            new AccountViewModel
+            {
+                rubleAccount = user.RubleAccount,
+                dollarAccount = user.DollarAccount,
+                euroAccount = user.EuroAccount,
+                currentBalance = user.RubleAccount.Balance.ToString() + " ₽"
+            });
         }
-
     }
 
     [HttpPost]
@@ -89,7 +96,7 @@ public class HomeController : Controller
         }
         else
         {
-            return View("~/Views/Home/Authorization.cshtml", new LoginViewModel { user = model.user, result= "Incorrect login or password" });
+            return View("~/Views/Home/Authorization.cshtml", new LoginViewModel { user = model.user, result = "Incorrect login or password" });
         }
 
     }
@@ -136,6 +143,32 @@ public class HomeController : Controller
         return View("~/Views/Home/PhoneVerification.cshtml");
     }
 
+    public IActionResult SetRubleAccount() => View("~/Views/Home/Account.cshtml",
+        new AccountViewModel
+        {
+            currentBalance = db.Users.Include(u => u.RubleAccount)
+            .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
+            .RubleAccount.Balance.ToString() + " ₽"
+        }
+        );
+
+    public IActionResult SetDollarAccount() => View("~/Views/Home/Account.cshtml",
+        new AccountViewModel
+        {
+            currentBalance = db.Users.Include(u => u.DollarAccount)
+            .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
+            .DollarAccount.Balance.ToString() + " $"
+        }
+        );
+
+    public IActionResult SetEuroAccount() => View("~/Views/Home/Account.cshtml",
+        new AccountViewModel
+        {
+            currentBalance = db.Users.Include(u => u.EuroAccount)
+            .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
+            .EuroAccount.Balance.ToString() + " €"
+        }
+        );
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

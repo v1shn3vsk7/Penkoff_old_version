@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Penkoff.Storage.Entities;
+﻿using Penkoff.Storage.Entities;
 
 namespace Penkoff.Storage;
 
@@ -11,4 +10,10 @@ public class UsersContext : DbContext
     }
 
     public DbSet<User> Users { get; set; }
+
+    public DbSet<RubleAccount> RubleAccounts { get; set; }
+
+    public DbSet<DollarAccount> DollarAccounts { get; set; }
+
+    public DbSet<EuroAccount> EuroAccounts { get; set; }
 }

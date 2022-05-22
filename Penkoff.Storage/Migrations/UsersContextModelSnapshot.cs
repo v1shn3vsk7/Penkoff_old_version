@@ -21,6 +21,45 @@ namespace Penkoff.Storage.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("Penkoff.Storage.Entities.DollarAccount", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<long>("Balance")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("DollarAccounts");
+                });
+
+            modelBuilder.Entity("Penkoff.Storage.Entities.EuroAccount", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<long>("Balance")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("EuroAccounts");
+                });
+
+            modelBuilder.Entity("Penkoff.Storage.Entities.RubleAccount", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<long>("Balance")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("RubleAccounts");
+                });
+
             modelBuilder.Entity("Penkoff.Storage.Entities.User", b =>
                 {
                     b.Property<int>("Id")
@@ -54,6 +93,51 @@ namespace Penkoff.Storage.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Penkoff.Storage.Entities.DollarAccount", b =>
+                {
+                    b.HasOne("Penkoff.Storage.Entities.User", "User")
+                        .WithOne("DollarAccount")
+                        .HasForeignKey("Penkoff.Storage.Entities.DollarAccount", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Penkoff.Storage.Entities.EuroAccount", b =>
+                {
+                    b.HasOne("Penkoff.Storage.Entities.User", "User")
+                        .WithOne("EuroAccount")
+                        .HasForeignKey("Penkoff.Storage.Entities.EuroAccount", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Penkoff.Storage.Entities.RubleAccount", b =>
+                {
+                    b.HasOne("Penkoff.Storage.Entities.User", "User")
+                        .WithOne("RubleAccount")
+                        .HasForeignKey("Penkoff.Storage.Entities.RubleAccount", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Penkoff.Storage.Entities.User", b =>
+                {
+                    b.Navigation("DollarAccount")
+                        .IsRequired();
+
+                    b.Navigation("EuroAccount")
+                        .IsRequired();
+
+                    b.Navigation("RubleAccount")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

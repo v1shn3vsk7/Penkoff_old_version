@@ -3,13 +3,16 @@
 <body>
     <div class="currency_picker">
         <div id="rectangle"></div>
-        <a class="ruble_switcher" asp-action="setrubleaccount" asp-controller="home">Ruble currency</a>
-        <a class="dollar_switcher" asp-action="setdollaraccount" asp-controller="home">Dollar currency</a>
-        <a class="euro_switcher" asp-action="seteuroaccount" asp-controller="home">Euro currency</a>
+        <a class="switcher" asp-action="setrubleaccount" asp-controller="home">Ruble currency</a>
+        <a class="switcher" asp-action="setdollaraccount" asp-controller="home">Dollar currency</a>
+        <a class="switcher" asp-action="seteuroaccount" asp-controller="home">Euro currency</a>
         
     </div>
-    <h5>@Model.currentBalance</h5>
-    <hr />
+    <div class="balance">
+        <h5>@Model.currentBalance</h5>
+        <hr />
+    </div>
+    
 </body>
 
 <style>
@@ -31,7 +34,7 @@ hr {
     position: absolute;
     width: 807px;
     height: 0px;
-    left: 500px;
+    left: 400px;
     top: 313.97px;
     background-color: #000000;
 
@@ -42,7 +45,7 @@ h5 {
 position: absolute;
 width: 807px;
 height: 72px;
-left: 500px;
+left: 400px;
 top: 156px;
 
 font-family: 'SF Pro Display';
@@ -55,19 +58,18 @@ line-height: 72px;
 text-align: center;
 
 color: #000000;
-
-.ruble_switcher {
-    font-size: 20px;
-    font-weight: 400;
+}
+.switcher {
+    display: inline-block;
+    vertical-align: top;
+    align-self: center;
+    margin: 10px 0px;
+    color: #7D7D7D;
     text-decoration: none;
-    text-align: left;
-    width: 100px;
-    color: #5C5757;
-
+    font-size: 22px;
+    transition: color .2s linear;
 }
-.ruble_switcher:hover {
-    color: #16FAEA;
-}
-
+.switcher:hover {
+    color: black;
 }
 </style>

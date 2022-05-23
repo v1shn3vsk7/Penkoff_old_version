@@ -77,7 +77,7 @@ public class HomeController : Controller
                 rubleAccount = user.RubleAccount,
                 dollarAccount = user.DollarAccount,
                 euroAccount = user.EuroAccount,
-                currentBalance = user.RubleAccount.Balance.ToString() + " ₽"
+                currentBalance = SetCurrencyForPrint(user.RubleAccount.Balance.ToString()) + " ₽"
             });
         }
     }
@@ -96,11 +96,14 @@ public class HomeController : Controller
         }
         else
         {
-            return View("~/Views/Home/Authorization.cshtml", new LoginViewModel { user = model.user, result = "Incorrect login or password" });
+            return View("~/Views/Home/Authorization.cshtml", new LoginViewModel 
+            { 
+                user = model.user, result = "Incorrect login or password"
+            });
         }
 
     }
-
+    
     [HttpPost]
     public IActionResult ValidateCode()
     {
@@ -143,30 +146,42 @@ public class HomeController : Controller
         return View("~/Views/Home/PhoneVerification.cshtml");
     }
 
+    public string SetCurrencyForPrint(string str)
+    {
+        if (str.Length < 4) return str;
+
+        for (int i = str.Length - 3; i >= 0; i -= 3)
+        {
+            str = str.Insert(i, " ");
+        }
+
+        return str;
+    }
+
     public IActionResult SetRubleAccount() => View("~/Views/Home/Account.cshtml",
         new AccountViewModel
         {
-            currentBalance = db.Users.Include(u => u.RubleAccount)
+            currentBalance = SetCurrencyForPrint(db.Users.Include(u => u.RubleAccount)
             .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
-            .RubleAccount.Balance.ToString() + " ₽"
+            .RubleAccount.Balance.ToString()) + " ₽"
         }
         );
 
     public IActionResult SetDollarAccount() => View("~/Views/Home/Account.cshtml",
         new AccountViewModel
         {
-            currentBalance = db.Users.Include(u => u.DollarAccount)
+            currentBalance = SetCurrencyForPrint(db.Users.Include(u => u.DollarAccount)
             .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
-            .DollarAccount.Balance.ToString() + " $"
+            .DollarAccount.Balance.ToString()) + " $"
         }
         );
 
     public IActionResult SetEuroAccount() => View("~/Views/Home/Account.cshtml",
         new AccountViewModel
         {
-            currentBalance = db.Users.Include(u => u.EuroAccount)
+            currentBalance = SetCurrencyForPrint(db.Users.Include(u => u.EuroAccount)
             .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
-            .EuroAccount.Balance.ToString() + " €"
+            .EuroAccount.Balance.ToString()) + " €"
         }
         );
 

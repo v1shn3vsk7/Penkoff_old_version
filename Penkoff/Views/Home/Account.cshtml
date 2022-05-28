@@ -12,7 +12,12 @@
         <h5>@Model.currentBalance</h5>
         <hr />
     </div>
+
+    <h4>Our partners:</h4>
     
+    <div class="tmp">
+    <h3>©2022 Penkoff, Moscow, Akademika Scriabin Street 25/1 building 4</h3>
+    </div>
 </body>
 
 <style>
@@ -41,23 +46,32 @@ hr {
 border: 0.5px solid #000000;
 }
 
+h4 {
+    position: absolute;
+    font-weight: 600;
+    font-size: 32px;
+    left: 400px;
+    top: 300px;
+    color: #000000;
+}
+
 h5 {
-position: absolute;
-width: 807px;
-height: 72px;
-left: 400px;
-top: 156px;
-
-font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 600;
-font-size: 60px;
-line-height: 72px;
-/* identical to box height */
-
-text-align: center;
-
-color: #000000;
+    position: absolute;
+    width: 807px;
+    height: 72px;
+    left: 400px;
+    top: 156px;
+    
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
 }
 .switcher {
     display: inline-block;
@@ -71,5 +85,20 @@ color: #000000;
 }
 .switcher:hover {
     color: black;
+}
+
+.tmp {
+    position: absolute;
+    top: 92%;
+    left: 30%;
+    display: inline;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    font-size: 15px;
+    line-height: normal;
+    width: 600px;
+    color: #9B9B9B;
 }
 </style>

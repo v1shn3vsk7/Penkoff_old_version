@@ -10,6 +10,6 @@ public class AccountViewModel
 
     public EuroAccount euroAccount { get; set; }
 
-    public string? currentBalance;
+    public string? currentBalance { get; set; }
 }
 

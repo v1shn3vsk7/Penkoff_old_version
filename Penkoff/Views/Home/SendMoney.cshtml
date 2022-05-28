@@ -1,0 +1,193 @@
+﻿@model Penkoff_ASP.NET_Core_.Models.SendMoneyViewModel;
+
+@{
+    string SetCurrencyForPrint(string str)
+    {
+        if (str.Length < 4) return str;
+
+        for (int i = str.Length - 3; i >= 0; i -= 3)
+        {
+            str = str.Insert(i, " ");
+        }
+
+        return str;
+    }
+}
+
+<body>
+     <h2>Select currency account:</h2>
+     
+    <h1>Your balance: @SetCurrencyForPrint(Model.Balance.ToString()) @Model.CurrencyPick</h1>
+
+    <input type="button" class="ruble-button" value="RUB" onclick="location.href='@Url.Action("ChangeToRubleAccount", "Home")'" />
+    <input type="button" class="dollar-button" value="USD" onclick="location.href='@Url.Action("ChangeToDollarAccount", "Home")'" />
+    <input type="button" class="euro-button" value="EUR" onclick="location.href='@Url.Action("ChangeToEuroAccount", "Home")'" />
+
+    <form asp-action="Transaction" asp-controller="Home">
+        <p>
+            <input type="text" id="inputPhone" value="+7(___)___-__-__"  asp-for="ReceiverPhone" required />
+        </p>
+        <p>
+            <input type="number" placeholder="Enter the amount: " min=1 max=@Model.Balance value="" asp-for="Amount" required />
+        </p>
+
+        <p1>
+            <input type="submit" class="submit-button" value="Send money" />
+        </p1>
+    </form>
+
+<script>
+    let inputPhone=document.getElementById("inputPhone");
+    inputPhone.oninput=()=>phoneMask(inputPhone)
+    function phoneMask(inputEl) {
+        let patStringArr = "+7(___)___-__-__".split('');
+        let arrPush = [3, 4, 5, 7, 8, 9, 11, 12, 14, 15]
+        let val = inputEl.value;
+        let arr = val.replace(/\D+/g, "").split('').splice(1);
+        let n;
+        let ni;
+        arr.forEach((s, i) => {
+            n = arrPush[i];
+            patStringArr[n] = s
+            ni = i
+        });
+        arr.length < 10 ? inputEl.style.color = 'red' : inputEl.style.color = 'green';
+        inputEl.value = patStringArr.join('');
+        n ? inputEl.setSelectionRange(n + 1, n + 1) : inputEl.setSelectionRange(17, 17)
+    }
+</script>
+    
+</body>
+
+<style>
+    h1 {
+    position: absolute;
+    top: 12.7%;
+    left: 45%;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+    }
+
+    h2 {
+    position: absolute;
+    top: 12%;
+    left: 11%;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+}
+
+input[type="text"] {
+    position: relative;
+    left: 0%;
+    width: 30%;
+    margin-bottom: 0px;
+    margin-top: 200px;
+
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #3F3F3F;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+input[type="number"] {
+    -webkit-appearance: none;
+    position: relative;
+    left: 0%;
+    width: 30%;
+    margin-bottom: 0px;
+    margin-top: 30px;
+
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #3F3F3F;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.ruble-button {
+    position: absolute;
+    width: 60px;
+    outline: none;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #16FA9C;
+    -webkit-border-radius: 10px;
+    left: 30%;
+    top: 16.3%;cursor: pointer;
+    transition: all 0.35s ease;
+}
+.ruble-button:hover {
+    color: white;
+    background: #16FA9C;
+}
+
+.dollar-button {
+    position: absolute;
+    width: 60px;
+    outline: none;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #16FA9C;
+    -webkit-border-radius: 10px;
+    left: 35%;
+    top: 16.3%;cursor: pointer;
+    transition: all 0.35s ease;
+}
+.dollar-button:hover {
+    color: white;
+    background: #16FA9C;
+}
+
+.euro-button {
+    position: absolute;
+    width: 60px;
+    outline: none;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #16FA9C;
+    -webkit-border-radius: 10px;
+    left: 40%;
+    top: 16.3%;cursor: pointer;
+    transition: all 0.35s ease;
+}
+.euro-button:hover {
+    color: white;
+    background: #16FA9C;
+}
+
+.submit-button {
+    width: 10%;
+    position: absolute;
+    left: 17%;
+    top: 50%;
+    background-color: #176FFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    vertical-align: central;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'SF Pro Display'; 
+    font-size: 16px;
+    border-radius: 10rem;
+}
+
+.submit-button:hover {
+    background-color: #16FAEA; 
+    color: black;
+    transition: color .5s linear;
+}
+
+</style>

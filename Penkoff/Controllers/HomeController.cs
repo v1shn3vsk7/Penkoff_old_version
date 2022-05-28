@@ -60,8 +60,8 @@ public class HomeController : Controller
             Balance = db.Users.Include(u => u.RubleAccount)
             .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
             .RubleAccount.Balance,
-            CurrencyPick= "₽",
-            Result =""
+            CurrencyPick = "₽",
+            Result = ""
         });
     }
 
@@ -75,7 +75,7 @@ public class HomeController : Controller
             Balance = db.Users.Include(u => u.RubleAccount)
             .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
             .RubleAccount.Balance,
-            CurrencyPick= " ₽",
+            CurrencyPick = " ₽",
             Result = ""
         });
     }
@@ -138,6 +138,9 @@ public class HomeController : Controller
             case "RUB":
                 user.RubleAccount.Balance -= model.Amount;
                 receiver.RubleAccount.Balance += model.Amount;
+
+                db.SaveChanges();
+
                 return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
                 {
                     Balance = user.RubleAccount.Balance,
@@ -148,16 +151,22 @@ public class HomeController : Controller
             case "USD":
                 user.DollarAccount.Balance -= model.Amount;
                 receiver.DollarAccount.Balance += model.Amount;
+
+                db.SaveChanges();
+
                 return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
                 {
                     Balance = user.DollarAccount.Balance,
                     CurrencyPick = " $",
                     Result = ""
-                });
+                });;
 
             case "EUR":
                 user.EuroAccount.Balance -= model.Amount;
                 receiver.EuroAccount.Balance += model.Amount;
+
+                db.SaveChanges();
+
                 return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
                 {
                     Balance = user.EuroAccount.Balance,

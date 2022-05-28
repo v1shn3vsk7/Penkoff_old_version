@@ -42,19 +42,6 @@ public class HomeController : Controller
                 new LoginViewModel { result = "" });
         }
 
-        /*var user = db.Users.Include(u => u.RubleAccount)
-           .Include(u => u.DollarAccount)
-           .Include(u => u.EuroAccount).FirstOrDefault(u => u.Id == userId);
-
-        IEnumerable<Currency> currencies = new List<Currency>
-        {
-        new Currency {Balance=user.RubleAccount.Balance, CurrencyType="RUB"},
-        new Currency {Balance=user.DollarAccount.Balance, CurrencyType="USD"},
-        new Currency {Balance=user.EuroAccount.Balance, CurrencyType="EUR"}
-        };
-
-        ViewBag.Currency = new SelectList(currencies, "Balance", "CurrencyType");*/
-
         return View();
     }
 
@@ -62,18 +49,11 @@ public class HomeController : Controller
     {
         var userId = HttpContext.Session.GetInt32("Id");
 
+        HttpContext.Session.SetString("currency", "RUB"); //set currency for future usings in Transactions
+
         var user = db.Users.Include(u => u.RubleAccount)
            .Include(u => u.DollarAccount)
            .Include(u => u.EuroAccount).FirstOrDefault(u => u.Id == userId);
-
-        /*IEnumerable<Currency> currencies = new List<Currency>
-        {
-        new Currency {Balance=user.RubleAccount.Balance, CurrencyType="RUB"},
-        new Currency {Balance=user.DollarAccount.Balance, CurrencyType="USD"},
-        new Currency {Balance=user.EuroAccount.Balance, CurrencyType="EUR"}
-        };*/
-
-       /* ViewBag.Currency = new SelectList(currencies, "Balance", "CurrencyType");*/
 
         return View(new SendMoneyViewModel
         {
@@ -87,6 +67,9 @@ public class HomeController : Controller
 
     public IActionResult ChangeToRubleAccount(SendMoneyViewModel model)
     {
+        HttpContext.Session.Remove("currency");
+        HttpContext.Session.SetString("currency", "RUB");
+
         return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
         {
             Balance = db.Users.Include(u => u.RubleAccount)
@@ -99,6 +82,8 @@ public class HomeController : Controller
 
     public IActionResult ChangeToDollarAccount(SendMoneyViewModel model)
     {
+        HttpContext.Session.Remove("currency");
+        HttpContext.Session.SetString("currency", "USD");
         return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
         {
             Balance = db.Users.Include(u => u.DollarAccount)
@@ -111,6 +96,9 @@ public class HomeController : Controller
 
     public IActionResult ChangeToEuroAccount(SendMoneyViewModel model)
     {
+        HttpContext.Session.Remove("currency");
+        HttpContext.Session.SetString("currency", "EUR");
+
         return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
         {
             Balance = db.Users.Include(u => u.EuroAccount)
@@ -119,6 +107,72 @@ public class HomeController : Controller
             CurrencyPick = " €",
             Result = ""
         });
+    }
+
+    public IActionResult Transaction(SendMoneyViewModel model)
+    {
+        model.Amount = uint.Parse(Request.Form["amount"]);
+        model.ReceiverPhone = Request.Form["phone_number"];
+        model.CurrencyPick = HttpContext.Session.GetString("currency");
+
+        var receiver = db.Users.Include(u => u.RubleAccount)
+            .Include(u => u.DollarAccount)
+            .Include(u => u.EuroAccount).FirstOrDefault(u => u.PhoneNumber == model.ReceiverPhone);
+
+        if (receiver is null)
+        {
+            return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
+            {
+                Result = "Incorrect information. Receiver is not found!"
+            });
+        }
+
+        var UserId = (int)HttpContext.Session.GetInt32("Id");
+        var user = db.Users.Include(u => u.RubleAccount)
+            .Include(u => u.DollarAccount)
+            .Include(u => u.EuroAccount).FirstOrDefault(u => u.Id == UserId);
+
+        switch (model.CurrencyPick)
+        {
+
+            case "RUB":
+                user.RubleAccount.Balance -= model.Amount;
+                receiver.RubleAccount.Balance += model.Amount;
+                return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
+                {
+                    Balance = user.RubleAccount.Balance,
+                    CurrencyPick = " ₽",
+                    Result = ""
+                });
+
+            case "USD":
+                user.DollarAccount.Balance -= model.Amount;
+                receiver.DollarAccount.Balance += model.Amount;
+                return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
+                {
+                    Balance = user.DollarAccount.Balance,
+                    CurrencyPick = " $",
+                    Result = ""
+                });
+
+            case "EUR":
+                user.EuroAccount.Balance -= model.Amount;
+                receiver.EuroAccount.Balance += model.Amount;
+                return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
+                {
+                    Balance = user.EuroAccount.Balance,
+                    CurrencyPick = " €",
+                    Result = ""
+                });
+
+            default:
+                return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
+                {
+                    Result = "Something went wrong. Please try again"
+                });
+        }
+
+
     }
 
     public IActionResult Authorization()
@@ -131,10 +185,6 @@ public class HomeController : Controller
         return View();
     }
 
-    /*public IActionResult SignUpPage()
-    {
-        return View("~/Views/Home/SignUp/SignUpPage.cshtml", new SignUpViewModel { result = "" });
-    }*/
     public IActionResult Privacy()
     {
         return View();
@@ -209,7 +259,7 @@ public class HomeController : Controller
             currentUser.Mail = HttpContext.Session.GetString("mail");
             db.SaveChanges();
 
-            return View("~/Views/Home/Account.cshtml");
+            return Account();
         }
         else
         {

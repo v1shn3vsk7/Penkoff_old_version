@@ -16,4 +16,6 @@ public class UsersContext : DbContext
     public DbSet<DollarAccount> DollarAccounts { get; set; }
 
     public DbSet<EuroAccount> EuroAccounts { get; set; }
+
+    public DbSet<Operation> Operations { get; set; }
 }

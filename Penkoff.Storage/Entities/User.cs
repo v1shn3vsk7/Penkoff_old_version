@@ -24,7 +24,9 @@ public class User
     public DollarAccount DollarAccount { get; set; }
 
     //[ForeignKey(nameof(Id))]
-    public EuroAccount EuroAccount { get; set; } 
+    public EuroAccount EuroAccount { get; set; }
+
+    public List<Operation> Operations { get; set; } = new();
 
 }
 

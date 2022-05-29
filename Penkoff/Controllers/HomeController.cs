@@ -111,10 +111,27 @@ public class HomeController : Controller
 
     public IActionResult Transaction(SendMoneyViewModel model)
     {
-        model.Amount = uint.Parse(Request.Form["amount"]);
-        model.ReceiverPhone = Request.Form["phone_number"];
-        model.CurrencyPick = HttpContext.Session.GetString("currency");
+        var UserId = (int)HttpContext.Session.GetInt32("Id");
+        var user = db.Users.Include(u => u.RubleAccount)
+            .Include(u => u.DollarAccount)
+            .Include(u => u.EuroAccount).FirstOrDefault(u => u.Id == UserId);
 
+        try
+        {
+            model.Amount = uint.Parse(Request.Form["amount"]);      //if user input is wrong
+            model.ReceiverPhone = Request.Form["phone_number"];
+            model.CurrencyPick = HttpContext.Session.GetString("currency");
+        }
+        catch (InvalidOperationException)
+        {
+            return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
+            {
+                Balance = user.RubleAccount.Balance,
+                CurrencyPick = " ₽",
+                Result = "Something is wrong. Please try again"
+            });
+        }
+        
         var receiver = db.Users.Include(u => u.RubleAccount)
             .Include(u => u.DollarAccount)
             .Include(u => u.EuroAccount).FirstOrDefault(u => u.PhoneNumber == model.ReceiverPhone);
@@ -126,11 +143,6 @@ public class HomeController : Controller
                 Result = "Incorrect information. Receiver is not found!"
             });
         }
-
-        var UserId = (int)HttpContext.Session.GetInt32("Id");
-        var user = db.Users.Include(u => u.RubleAccount)
-            .Include(u => u.DollarAccount)
-            .Include(u => u.EuroAccount).FirstOrDefault(u => u.Id == UserId);
 
         switch (model.CurrencyPick)
         {
@@ -174,7 +186,7 @@ public class HomeController : Controller
                 Operation TransferUSD = new()
                 {
                     Amount = model.Amount,
-                    Currency = "RUB",
+                    Currency = "USD",
                     Type = "Transfer",
                     User = user,
                     UserId = UserId
@@ -182,7 +194,7 @@ public class HomeController : Controller
                 Operation IncomingUSD = new()
                 {
                     Amount = model.Amount,
-                    Currency = "RUB",
+                    Currency = "USD",
                     Type = "Incoming",
                     User = receiver,
                     UserId = receiver.Id
@@ -207,7 +219,7 @@ public class HomeController : Controller
                 Operation TransferEUR = new()
                 {
                     Amount = model.Amount,
-                    Currency = "RUB",
+                    Currency = "EUR",
                     Type = "Transfer",
                     User = user,
                     UserId = UserId
@@ -215,7 +227,7 @@ public class HomeController : Controller
                 Operation IncomingEUR = new()
                 {
                     Amount = model.Amount,
-                    Currency = "RUB",
+                    Currency = "EUR",
                     Type = "Incoming",
                     User = receiver,
                     UserId = receiver.Id
@@ -236,7 +248,10 @@ public class HomeController : Controller
             default:
                 return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
                 {
+                    Balance = user.RubleAccount.Balance,
+                    CurrencyPick = " ₽",
                     Result = "Something went wrong. Please try again"
+
                 });
         }
     }

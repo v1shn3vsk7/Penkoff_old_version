@@ -53,7 +53,7 @@ public class HomeController : Controller
         return View(new OperationsViewModel
         {
             User = user,
-            Operations = user.Operations.ToList().Where(u => u.UserId == userId)
+            Operations = user.Operations.ToList().Where(u => u.UserId == userId).Reverse()
         });
     }
 

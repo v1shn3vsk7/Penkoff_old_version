@@ -34,18 +34,36 @@
 
                     case "USD":
                         <h3>$</h3>
-                        <h4>-@item.Amount $</h4>
+                        <h4>-@SetCurrencyForPrint(item.Amount.ToString()) $</h4>
                         break;
 
                         case "EUR":
                         <h3>€</h3>
-                        <h4>-@item.Amount €</h4>
+                        <h4>-@SetCurrencyForPrint(item.Amount.ToString()) €</h4>
                         break;
                 }
             }
-            else
+
+            @if(item.Type=="Incoming")
             {
-                
+                <h2>Incoming</h2>
+                switch(item.Currency)
+                {
+                    case "RUB":
+                        <h3>₽</h3>
+                        <h5>+@SetCurrencyForPrint(item.Amount.ToString()) ₽</h5>
+                        break;
+
+                    case "USD":
+                        <h3>$</h3>
+                        <h5>+@SetCurrencyForPrint(item.Amount.ToString()) $</h5>
+                        break;
+
+                        case "EUR":
+                        <h3>€</h3>
+                        <h5>+@SetCurrencyForPrint(item.Amount.ToString()) €</h5>
+                        break;
+                }
             }
         </div>
 }
@@ -88,11 +106,22 @@ h3 {
 h4 {
     float: right;
     font-family: 'SF Pro Display';
-    margin-top: -20%;
+    margin-top: -21%;
     margin-right: 5%;
     font-weight: 600;
     font-size: 24px;
     color: black;
+}
+
+h5 {
+    float: right;
+    font-family: 'SF Pro Display';
+    margin-top: -21%;
+    margin-right: 5%;
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+    color: #3ADF7C;
 }
 
 .transaction {

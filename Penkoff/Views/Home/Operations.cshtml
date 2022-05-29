@@ -1,0 +1,111 @@
+﻿@model Penkoff_ASP.NET_Core_.Models.OperationsViewModel;
+
+@{
+    string SetCurrencyForPrint(string str)
+    {
+        if (str.Length < 4) return str;
+
+        for (int i = str.Length - 3; i >= 0; i -= 3)
+        {
+            str = str.Insert(i, " ");
+        }
+
+        return str;
+    }
+}
+
+
+<body>
+    <h1>Operations history:</h1>
+
+    @foreach (var item in Model.Operations.Where(u => u.UserId == Model.User.Id))
+{
+    <div class="transaction">
+        <div id="rectangle"></div>
+            @if(item.Type=="Transfer")
+            {
+                <h2>Transfer</h2>
+                switch(item.Currency)
+                {
+                    case "RUB":
+                        <h3>₽</h3>
+                        <h4>-@SetCurrencyForPrint(item.Amount.ToString()) ₽</h4>
+                        break;
+
+                    case "USD":
+                        <h3>$</h3>
+                        <h4>-@item.Amount $</h4>
+                        break;
+
+                        case "EUR":
+                        <h3>€</h3>
+                        <h4>-@item.Amount €</h4>
+                        break;
+                }
+            }
+            else
+            {
+                
+            }
+        </div>
+}
+
+</body>
+
+<style>
+body {
+    background: #FBFBFB;
+}
+
+h1 {
+    /*position: absolute;*/
+    margin-bottom: 13%;
+    margin-top: 6%;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+}
+
+h2 {
+    margin-top: 1%;
+    margin-left: 2%;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+}
+
+h3 {
+    font-family: 'SF Pro Display';
+    margin-top: 1%;
+    margin-left: 3%;
+    font-weight: 600;
+    font-size: 40px;
+    color: #176FFA;
+}
+
+h4 {
+    float: right;
+    font-family: 'SF Pro Display';
+    margin-top: -20%;
+    margin-right: 5%;
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+}
+
+.transaction {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    width: 550px;
+    height: 150px;
+    background: #FBFBFB;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: 2px solid #4E4E4E;
+    border-radius: 20px;
+}
+</style>
+

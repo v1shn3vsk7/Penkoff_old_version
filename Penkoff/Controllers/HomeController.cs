@@ -21,7 +21,6 @@ public class HomeController : Controller
     {
         _logger = logger;
     }*/
-
     public HomeController(UsersContext context)
     {
         db = context;
@@ -43,6 +42,19 @@ public class HomeController : Controller
         }
 
         return View();
+    }
+
+    public IActionResult Operations()
+    {
+        var userId = HttpContext.Session.GetInt32("Id");
+
+        var user = db.Users.Include(u => u.Operations).FirstOrDefault(u => u.Id == userId);
+
+        return View(new OperationsViewModel
+        {
+            User = user,
+            Operations = user.Operations.ToList().Where(u => u.UserId == userId)
+        });
     }
 
     public IActionResult SendMoney()

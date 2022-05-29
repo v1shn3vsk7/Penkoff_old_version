@@ -134,10 +134,29 @@ public class HomeController : Controller
 
         switch (model.CurrencyPick)
         {
-
             case "RUB":
                 user.RubleAccount.Balance -= model.Amount;
                 receiver.RubleAccount.Balance += model.Amount;
+
+                Operation TransferRUB = new()
+                {
+                    Amount = model.Amount,
+                    Currency = "RUB",
+                    Type = "Transfer",
+                    User = user,
+                    UserId = UserId
+                };
+                Operation IncomingRUB = new()
+                {
+                    Amount = model.Amount,
+                    Currency = "RUB",
+                    Type = "Incoming",
+                    User = receiver,
+                    UserId = receiver.Id
+                };
+
+                user.Operations.Add(TransferRUB);
+                receiver.Operations.Add(IncomingRUB);
 
                 db.SaveChanges();
 
@@ -152,6 +171,26 @@ public class HomeController : Controller
                 user.DollarAccount.Balance -= model.Amount;
                 receiver.DollarAccount.Balance += model.Amount;
 
+                Operation TransferUSD = new()
+                {
+                    Amount = model.Amount,
+                    Currency = "RUB",
+                    Type = "Transfer",
+                    User = user,
+                    UserId = UserId
+                };
+                Operation IncomingUSD = new()
+                {
+                    Amount = model.Amount,
+                    Currency = "RUB",
+                    Type = "Incoming",
+                    User = receiver,
+                    UserId = receiver.Id
+                };
+
+                user.Operations.Add(TransferUSD);
+                receiver.Operations.Add(IncomingUSD);
+
                 db.SaveChanges();
 
                 return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
@@ -159,11 +198,31 @@ public class HomeController : Controller
                     Balance = user.DollarAccount.Balance,
                     CurrencyPick = " $",
                     Result = ""
-                });;
+                });
 
             case "EUR":
                 user.EuroAccount.Balance -= model.Amount;
                 receiver.EuroAccount.Balance += model.Amount;
+
+                Operation TransferEUR = new()
+                {
+                    Amount = model.Amount,
+                    Currency = "RUB",
+                    Type = "Transfer",
+                    User = user,
+                    UserId = UserId
+                };
+                Operation IncomingEUR = new()
+                {
+                    Amount = model.Amount,
+                    Currency = "RUB",
+                    Type = "Incoming",
+                    User = receiver,
+                    UserId = receiver.Id
+                };
+
+                user.Operations.Add(TransferEUR);
+                receiver.Operations.Add(IncomingEUR);
 
                 db.SaveChanges();
 
@@ -180,8 +239,6 @@ public class HomeController : Controller
                     Result = "Something went wrong. Please try again"
                 });
         }
-
-
     }
 
     public IActionResult Authorization()

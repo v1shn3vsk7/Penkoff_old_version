@@ -14,7 +14,6 @@ public class HomeController : Controller
 {
     UsersContext db;
 
-
     //private readonly ILogger<HomeController> _logger;
 
     /*public HomeController(ILogger<HomeController> logger)
@@ -31,7 +30,7 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Services()
+    /*public IActionResult Services()
     {
         var userId = HttpContext.Session.GetInt32("Id");
 
@@ -42,15 +41,15 @@ public class HomeController : Controller
         }
 
         return View();
-    }
+    }*/
 
-    public IActionResult MyCards()
+    /*public IActionResult MyCards()
     {
         var userId = HttpContext.Session.GetInt32("Id");
 
         if (userId is null)
         {
-            return Account();
+            return Account(); //RedirectToAction("Account", "Login");
         }
 
         var user = db.Users.Include(u => u.Cards).FirstOrDefault(u => u.Id == userId);
@@ -60,9 +59,9 @@ public class HomeController : Controller
             User = user,
             Cards = user.Cards.ToList().Where(u => u.UserId == userId).Reverse()
         });
-    }
+    }*/
 
-    public IActionResult GetPerformanceCard(MyCardsViewModel model)
+   /* public IActionResult GetPerformanceCard(MyCardsViewModel model)
     {
         int userId = (int)HttpContext.Session.GetInt32("Id");
 
@@ -94,9 +93,9 @@ public class HomeController : Controller
             User = user,
             Cards = user.Cards
         });
-    }
+    }*/
 
-    public IActionResult Operations()
+    /*public IActionResult Operations()
     {
         var userId = HttpContext.Session.GetInt32("Id");
 
@@ -107,9 +106,9 @@ public class HomeController : Controller
             User = user,
             Operations = user.Operations.ToList().Where(u => u.UserId == userId).Reverse()
         });
-    }
+    }*/
 
-    public IActionResult SendMoney()
+    /*public IActionResult SendMoney()
     {
         var userId = HttpContext.Session.GetInt32("Id");
 
@@ -127,9 +126,9 @@ public class HomeController : Controller
             CurrencyPick = "₽",
             Result = ""
         });
-    }
+    }*/
 
-    public IActionResult ChangeToRubleAccount(SendMoneyViewModel model)
+    /*public IActionResult ChangeToRubleAccount(SendMoneyViewModel model)
     {
         HttpContext.Session.Remove("currency");
         HttpContext.Session.SetString("currency", "RUB");
@@ -142,12 +141,13 @@ public class HomeController : Controller
             CurrencyPick = " ₽",
             Result = ""
         });
-    }
+    }*/
 
-    public IActionResult ChangeToDollarAccount(SendMoneyViewModel model)
+    /*public IActionResult ChangeToDollarAccount(SendMoneyViewModel model)
     {
         HttpContext.Session.Remove("currency");
         HttpContext.Session.SetString("currency", "USD");
+
         return View("~/Views/Home/SendMoney.cshtml", new SendMoneyViewModel
         {
             Balance = db.Users.Include(u => u.DollarAccount)
@@ -156,9 +156,9 @@ public class HomeController : Controller
             CurrencyPick = " $",
             Result = ""
         });
-    }
+    }*/
 
-    public IActionResult ChangeToEuroAccount(SendMoneyViewModel model)
+    /*public IActionResult ChangeToEuroAccount(SendMoneyViewModel model)
     {
         HttpContext.Session.Remove("currency");
         HttpContext.Session.SetString("currency", "EUR");
@@ -171,9 +171,9 @@ public class HomeController : Controller
             CurrencyPick = " €",
             Result = ""
         });
-    }
+    }*/
 
-    public IActionResult Transaction(SendMoneyViewModel model)
+    /*public IActionResult Transaction(SendMoneyViewModel model)
     {
         var UserId = (int)HttpContext.Session.GetInt32("Id");
         var user = db.Users.Include(u => u.RubleAccount)
@@ -318,24 +318,24 @@ public class HomeController : Controller
 
                 });
         }
-    }
+    }*/
 
-    public IActionResult Authorization()
+    /*public IActionResult Authorization()
     {
         return View();
-    }
+    }*/
 
-    public IActionResult Login()
+    /*public IActionResult Login()
     {
         return View();
-    }
+    }*/
 
     public IActionResult Privacy()
     {
         return View();
     }
 
-    public IActionResult Account()
+    /*public IActionResult Account()
     {
         int userId;
 
@@ -366,9 +366,9 @@ public class HomeController : Controller
                 currentBalance = SetCurrencyForPrint(user.RubleAccount.Balance.ToString()) + " ₽",
             });
         }
-    }
+    }*/
 
-    [HttpPost]
+    /*[HttpPost]
     public IActionResult Login(LoginViewModel model)
     {
         User? attempt = null;
@@ -389,9 +389,9 @@ public class HomeController : Controller
             });
         }
 
-    }
+    }*/
 
-    [HttpPost]
+    /*[HttpPost]
     public IActionResult ValidateCode()
     {
         string inputCode = Request.Form["code"];
@@ -410,13 +410,11 @@ public class HomeController : Controller
         {
             return View("~/Views/Home/PhoneVerification.cshtml");
         }
-    }
+    }*/
 
-    [HttpPost]
+    /*[HttpPost]
     public IActionResult Verification(User user)
     {
-        //User currentUser = db.Users.Find((int)HttpContext.Session.GetInt32("Id")); //get current user
-
         Random rn = new();
         var verificationCode = rn.Next(100000, 999999);
         HttpContext.Session.SetInt32("verificationCode", verificationCode);
@@ -427,9 +425,9 @@ public class HomeController : Controller
         HttpContext.Session.SetString("phone", user.PhoneNumber);
 
         return View("~/Views/Home/PhoneVerification.cshtml");
-    }
+    }*/
 
-    public string SetCurrencyForPrint(string str)
+    /*public string SetCurrencyForPrint(string str)
     {
         if (str.Length < 4) return str;
 
@@ -439,31 +437,31 @@ public class HomeController : Controller
         }
 
         return str;
-    }
+    }*/
 
-    public IActionResult SetRubleAccount() => View("~/Views/Home/Account.cshtml",
+   /* public IActionResult SetRubleAccount() => View("~/Views/Home/Account.cshtml",
         new AccountViewModel
         {
             currentBalance = SetCurrencyForPrint(db.Users.Include(u => u.RubleAccount)
             .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
             .RubleAccount.Balance.ToString()) + " ₽"
-        });
+        });*/
 
-    public IActionResult SetDollarAccount() => View("~/Views/Home/Account.cshtml",
+    /*public IActionResult SetDollarAccount() => View("~/Views/Home/Account.cshtml",
         new AccountViewModel
         {
             currentBalance = SetCurrencyForPrint(db.Users.Include(u => u.DollarAccount)
             .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
             .DollarAccount.Balance.ToString()) + " $"
-        });
+        });*/
 
-    public IActionResult SetEuroAccount() => View("~/Views/Home/Account.cshtml",
+    /*public IActionResult SetEuroAccount() => View("~/Views/Home/Account.cshtml",
         new AccountViewModel
         {
             currentBalance = SetCurrencyForPrint(db.Users.Include(u => u.EuroAccount)
             .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
             .EuroAccount.Balance.ToString()) + " €"
-        });
+        });*/
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

@@ -10,7 +10,7 @@
     {
         if (str.Length < 4) return str;
 
-        for (int i = str.Length - 3; i >= 0; i -= 3)
+        for (int i = str.Length - 3; i > 0; i -= 3)
         {
             str = str.Insert(i, " ");
         }
@@ -26,9 +26,9 @@
 
     <h1>Your balance: @SetCurrencyForPrint(Model.Balance.ToString()) @Model.CurrencyPick</h1>
 
-    <input type="button" class="ruble-button" value="RUB" onclick="location.href='@Url.Action("ChangeToRubleAccount", "Home")'" />
-    <input type="button" class="dollar-button" value="USD" onclick="location.href='@Url.Action("ChangeToDollarAccount", "Home")'" />
-    <input type="button" class="euro-button" value="EUR" onclick="location.href='@Url.Action("ChangeToEuroAccount", "Home")'" />
+    <input type="button" class="ruble-button" value="RUB" onclick="location.href='@Url.Action("ChangeToRubleAccount", "Services")'" />
+    <input type="button" class="dollar-button" value="USD" onclick="location.href='@Url.Action("ChangeToDollarAccount", "Services")'" />
+    <input type="button" class="euro-button" value="EUR" onclick="location.href='@Url.Action("ChangeToEuroAccount", "Services")'" />
 
     <form method="post" action="Transaction">
         <p>
@@ -38,7 +38,7 @@
         <input runat="server" name="amount" type="number" placeholder="Enter the amount: " min=1 max=@Model.Balance value="" asp-for=Amount required />
     </p>
     <p1>
-        <input type="submit" class="submit-button" value="Send money" onclick="location.href='@Url.Action("Transaction", "Home", Model)'" />
+        <input type="submit" class="submit-button" value="Send money" onclick="location.href='@Url.Action("Transaction", "Services", Model)'" />
     </p1>
     </form>
     @*<input type="button" class="submit-button" value="Send money" onclick="location.href='@Url.Action("Transaction", "Home", Model)'" />*@

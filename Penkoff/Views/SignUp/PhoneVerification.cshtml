@@ -1,0 +1,64 @@
+﻿@model Penkoff.Storage.Entities.User;
+
+@{
+    Layout = null;
+}
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="~/css/PhoneVerification.css">
+</head>
+
+<body>
+    <script src="~/lib/jquery/phone-validation/JavaScript.js"></script>
+
+    <div class="signUpBox">
+        <div id="rectangle"></div>
+        <form asp-action="Verification" asp-controller="SignUp">
+            <h2>Verificate your data</h2>
+            <p>
+                <input type="text" id="inputPhone" value="+7(___)___-__-__"  asp-for="PhoneNumber" required />
+            </p> 
+
+            <script>
+    let inputPhone=document.getElementById("inputPhone");
+    inputPhone.oninput=()=>phoneMask(inputPhone)
+    function phoneMask(inputEl) {
+        let patStringArr = "+7(___)___-__-__".split('');
+        let arrPush = [3, 4, 5, 7, 8, 9, 11, 12, 14, 15]
+        let val = inputEl.value;
+        let arr = val.replace(/\D+/g, "").split('').splice(1);
+        let n;
+        let ni;
+        arr.forEach((s, i) => {
+            n = arrPush[i];
+            patStringArr[n] = s
+            ni = i
+        });
+        arr.length < 10 ? inputEl.style.color = 'red' : inputEl.style.color = 'green';
+        inputEl.value = patStringArr.join('');
+        n ? inputEl.setSelectionRange(n + 1, n + 1) : inputEl.setSelectionRange(17, 17)
+    }
+</script>
+
+        <p>
+            <input type="email" placeholder="Email:" asp-for="Mail" />
+        </p>
+
+            <p1>
+            <input type="submit" value="Send code" class="submit_button"/>
+        </p1>
+        </form>
+
+        <form asp-action="ValidateCode" asp-controller="SignUp">
+         <input type="text" placeholder="Verification code:" name="code" id="anotherTextBox" runat="server" />
+        <input type="submit" class="submit_code" value="Submit"/>
+        </form>
+        
+    </div>
+
+    <div class="tmp">
+    <h4>©2022 Penkoff, Moscow, Akademika Scriabin Street 25/1 building 4</h4>
+    </div>
+
+</body>

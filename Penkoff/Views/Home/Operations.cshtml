@@ -1,11 +1,16 @@
 ﻿@model Penkoff_ASP.NET_Core_.Models.OperationsViewModel;
 
+<head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="~/css/Operations.css">
+</head>
+
 @{
     string SetCurrencyForPrint(string str)
     {
         if (str.Length < 4) return str;
 
-        for (int i = str.Length - 3; i >= 0; i -= 3)
+        for (int i = str.Length - 3; i > 0; i -= 3)
         {
             str = str.Insert(i, " ");
         }
@@ -70,7 +75,7 @@
 
 </body>
 
-<style>
+@*<style>
 body {
     background: #FBFBFB;
 }
@@ -135,5 +140,5 @@ h5 {
     border: 2px solid #4E4E4E;
     border-radius: 20px;
 }
-</style>
+</style>*@
 

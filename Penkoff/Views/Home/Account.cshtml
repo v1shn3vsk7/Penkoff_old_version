@@ -1,5 +1,10 @@
 ﻿@model Penkoff_ASP.NET_Core_.Models.AccountViewModel;
 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="~/css/Account.css">
+</head>
+
 <body>
     <div class="currency_picker">
         <div id="rectangle"></div>
@@ -19,86 +24,3 @@
     <h3>©2022 Penkoff, Moscow, Akademika Scriabin Street 25/1 building 4</h3>
     </div>
 </body>
-
-<style>
-body {
-    background-color: #FBFBFB;
-}
-
-.currency_picker {
-    position: absolute;
-    width: 160px;
-    height: 170px;
-    background: #FBFBFB;
-    border: 1px solid #000000;
-    border-radius: 20px;
-    top: 20%;
-}
-
-hr {
-    position: absolute;
-    width: 807px;
-    height: 0px;
-    left: 400px;
-    top: 313.97px;
-    background-color: #000000;
-
-border: 0.5px solid #000000;
-}
-
-h4 {
-    position: absolute;
-    font-weight: 600;
-    font-size: 32px;
-    left: 400px;
-    top: 300px;
-    color: #000000;
-}
-
-h5 {
-    position: absolute;
-    width: 807px;
-    height: 72px;
-    left: 400px;
-    top: 156px;
-    
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 60px;
-    line-height: 72px;
-    /* identical to box height */
-    
-    text-align: center;
-    
-    color: #000000;
-}
-.switcher {
-    display: inline-block;
-    vertical-align: top;
-    align-self: center;
-    margin: 10px 0px;
-    color: #7D7D7D;
-    text-decoration: none;
-    font-size: 22px;
-    transition: color .2s linear;
-}
-.switcher:hover {
-    color: black;
-}
-
-.tmp {
-    position: absolute;
-    top: 92%;
-    left: 30%;
-    display: inline;
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 300;
-    text-align: center;
-    font-size: 15px;
-    line-height: normal;
-    width: 600px;
-    color: #9B9B9B;
-}
-</style>

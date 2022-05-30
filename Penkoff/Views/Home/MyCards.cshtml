@@ -1,12 +1,50 @@
 ﻿@model Penkoff_ASP.NET_Core_.Models.MyCardsViewModel;
 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="~/css/MyCards.css">
+
+</head>
+
 <body>
     <h1>Your cards:</h1>
 
 
     @foreach (var card in Model.Cards.Where(u => u.UserId == Model.User.Id))
     {
+        <div class="card">
+            @switch (card.Type)
+            {
+                case Penkoff.Storage.Entities.Types.PerformanceEdition:
+                    <div id="rectangle1">
+                        <h6 id="card-number">@card.Pan</h6>
+                        <h5 id="card-holder">@Model.User.LastName @Model.User.FirstName</h5>
+                        <h6 id="date">@card.ExpirationDate</h6>
+                    </div>
+                    break;
 
+                case Penkoff.Storage.Entities.Types.BillyEdition:
+                    <div id="rectangle2">
+                        <h6 id="card-number">@card.Pan</h6>
+                        <h5 id="card-holder">@Model.User.LastName @Model.User.FirstName</h5>
+                        <h6 id="date">@card.ExpirationDate</h6>
+                        </div>
+                    break;
+
+                case Penkoff.Storage.Entities.Types.UltimateEdition:
+                    <div id="rectangle3">
+                        <h6 id="card-number">@card.Pan</h6>
+                        <h5 id="card-holder">@Model.User.LastName @Model.User.FirstName</h5>
+                        <h6 id="date">@card.ExpirationDate</h6>
+                        </div>
+                    break;
+
+                default:
+                    break;
+            }
+
+
+        </div>
     }
 
 
@@ -14,7 +52,7 @@
     <h2>Get a new card:</h2>
 
     <div class="Van-card">
-        <img class="van-image" width="300" height="200" src="~/images/Van.jpg" />
+        <img class="van-image" width="300" height="200" src="~/images/FinalVan.png" />
         <h3>♂Performance artist Edition♂</h3>
         <h4>10% cashback at the gym</h4>
         <h4>Leatherman status</h4>
@@ -23,7 +61,7 @@
     </div>
 
     <div class="Billy-card">
-        <img class="billy-image" width="300" height="200" src="~/images/Billy.jpg" />
+        <img class="billy-image" width="300" height="200" src="~/images/FinalBilly.jpg" />
         <h3>♂Billy Special Edition♂</h3>
         <h4>15% cashback on leather pants</h4>
         <h4>Boss of the gym status</h4>
@@ -32,7 +70,7 @@
     </div>
 
     <div class="ultimate-card">
-        <img class="ultimate-image" width="300" height="200" src="~/images/ultimateEdition.jpg" />
+        <img class="ultimate-image" width="300" height="200" src="~/images/UltimateFinal.jpg" />
         <h3>♂Ultimate Edition♂</h3>
         <h4>Free maintenance</h4>
         <h4>Free access to lounge areas</h4>
@@ -45,9 +83,9 @@
 
 </body>
 
-<style>
+@*<style>
     h1 {
-        margin-bottom: 13%;
+        margin-bottom: 3%;
         margin-top: 6%;
         font-family: 'SF Pro Display';
         font-weight: 600;
@@ -57,7 +95,7 @@
 
     h2 {
         margin-bottom: 2%;
-        margin-top: 6%;
+        margin-top: 0%;
         font-family: 'SF Pro Display';
         font-weight: 600;
         font-size: 24px;
@@ -74,6 +112,60 @@
         font-family: 'SF Pro Display';
         font-size: 20px;
         color: #176FFA;
+    }
+
+    h5 {
+        font-family: Pragmatica;
+        font-size: 20px;
+        color: #ADB5B4;
+    }
+
+    h6 {
+        font-family: 'Credit Card';
+        font-weight: 600;
+        color: #ADB5B4;
+    }
+
+    #card-number {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+
+    #card-holder {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+
+    #date {
+         margin-left: 40%;
+        margin-top: 32%;
+    }
+
+    #rectangle1 {
+    width: 458.85px;
+    height: 320px;
+    background-size: 133%;
+    border-radius: 30px;
+    background-image: url(../images/FinalVan.png);
+    margin-bottom: 5%;
+    }
+
+    #rectangle2 {
+    width: 458.85px;
+    height: 320px;
+    background-size: 133%;
+    border-radius: 30px;
+    background-image: url(../images/FinalVan.png);
+    margin-bottom: 5%;
+    }
+
+    #rectangle3 {
+    width: 458.85px;
+    height: 320px;
+    background-size: 133%;
+    border-radius: 30px;
+    background-image: url(../images/FinalVan.png);
+    margin-bottom: 5%;
     }
 
     .Van-card {
@@ -103,6 +195,14 @@
             color: black;
             transition: color .5s linear;
         }
+        .img1 {
+            border-radius: 20px;
+        }
+
+    /*.performance-card { 
+        border-radius: 30px;
+        margin-bottom: 10%;
+    }*/
 
     .Billy-card {
         margin-left: 38%;
@@ -165,4 +265,4 @@
         }
 
 </style>
-
+*@

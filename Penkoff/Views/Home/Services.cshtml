@@ -1,5 +1,10 @@
 ﻿@model Penkoff_ASP.NET_Core_.Models.ServicesViewModel;
 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="~/css/Services.css">
+</head>
+
 <body>
     <a class="send-money" asp-action="sendmoney" asp-controller="home">
         <img class="send-money-icon" src="~/images/send-money.png" />
@@ -10,40 +15,3 @@
     </a>
 
 </body>
-
-<style>
-body {
-    background-color: #FBFBFB;
-}
-
-.send-money-icon {
-    position: absolute;
-    top: 10%;
-    width: 51px;
-    height: 51px;
-}
-
-.transaction-history-icon {
-    position: absolute;
-    top: 10%;
-    left: 15%;
-    width: 51px;
-    height: 51px;
-}
-
-h2 {
-    position: absolute;
-    top: 12%;
-    left: 11%;
-    font-family: 'SF Pro Display';
-    font-weight: 600;
-    font-size: 24px;
-    color: #000000;
-}
-
-select {
-    position:absolute;
-    left: 30%;
-    top: 16.3%;
-}
-</style>

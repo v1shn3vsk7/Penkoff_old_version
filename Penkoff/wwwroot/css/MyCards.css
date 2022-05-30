@@ -1,0 +1,180 @@
+﻿h1 {
+    margin-bottom: 3%;
+    margin-top: 6%;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+}
+
+h2 {
+    margin-bottom: 2%;
+    margin-top: 0%;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+}
+
+h3 {
+    font-family: 'SF Pro Display';
+    font-size: 24px;
+    color: #000000;
+}
+
+h4 {
+    font-family: 'SF Pro Display';
+    font-size: 20px;
+    color: #176FFA;
+}
+
+h5 {
+    font-family: Pragmatica;
+    font-size: 20px;
+    color: #ADB5B4;
+}
+
+h6 {
+    font-family: 'Credit Card';
+    font-weight: 600;
+    color: #ADB5B4;
+}
+
+#card-number {
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+#card-holder {
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+#date {
+    margin-left: 40%;
+    margin-top: 32%;
+}
+
+#rectangle1 {
+    width: 458.85px;
+    height: 320px;
+    background-size: 133%;
+    border-radius: 30px;
+    background-image: url(../images/FinalVan.png);
+    margin-bottom: 5%;
+}
+
+#rectangle2 {
+    width: 458.85px;
+    height: 320px;
+    background-size: 133%;
+    border-radius: 30px;
+    background-image: url(../images/FinalVan.png);
+    margin-bottom: 5%;
+}
+
+#rectangle3 {
+    width: 458.85px;
+    height: 320px;
+    background-size: 133%;
+    border-radius: 30px;
+    background-image: url(../images/FinalVan.png);
+    margin-bottom: 5%;
+}
+
+.Van-card {
+}
+
+.van-image {
+    border-radius: 30px;
+}
+
+.make-van-card {
+    margin-left: 6%;
+    background-color: #176FFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    vertical-align: central;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'SF Pro Display';
+    font-size: 16px;
+    border-radius: 10rem;
+}
+
+    .make-van-card:hover {
+        background-color: #16FAEA;
+        color: black;
+        transition: color .5s linear;
+    }
+
+.img1 {
+    border-radius: 20px;
+}
+
+/*.performance-card { 
+        border-radius: 30px;
+        margin-bottom: 10%;
+    }*/
+
+.Billy-card {
+    margin-left: 38%;
+    margin-top: -43%;
+}
+
+.billy-image {
+    border-radius: 30px;
+}
+
+.make-billy-card {
+    margin-left: 12%;
+    background-color: #176FFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    vertical-align: central;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'SF Pro Display';
+    font-size: 16px;
+    border-radius: 10rem;
+}
+
+    .make-billy-card:hover {
+        background-color: #16FAEA;
+        color: black;
+        transition: color .5s linear;
+    }
+
+.ultimate-card {
+    float: right;
+    margin-top: -43%;
+}
+
+.ultimate-image {
+    border-radius: 30px;
+}
+
+.make-ultimate-card {
+    margin-left: 33%;
+    background-color: #176FFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    vertical-align: central;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'SF Pro Display';
+    font-size: 16px;
+    border-radius: 10rem;
+}
+
+    .make-ultimate-card:hover {
+        background-color: #16FAEA;
+        color: black;
+        transition: color .5s linear;
+    }

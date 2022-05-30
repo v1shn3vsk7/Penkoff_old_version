@@ -53,7 +53,7 @@ public class HomeController : Controller
             return Account();
         }
 
-        var user = db.Users.Include(u => u.Operations).FirstOrDefault(u => u.Id == userId);
+        var user = db.Users.Include(u => u.Cards).FirstOrDefault(u => u.Id == userId);
 
         return View(new MyCardsViewModel
         {
@@ -66,20 +66,26 @@ public class HomeController : Controller
     {
         int userId = (int)HttpContext.Session.GetInt32("Id");
 
-        var user = db.Users.Include(u => u.Cards).FirstOrDefault(u => u.Id == userId);
+        var user = db.Users.Include(u => u.Cards).Include(u => u.RubleAccount).Include(u => u.DollarAccount).Include(u => u.EuroAccount)
+            .FirstOrDefault(u => u.Id == userId);
 
-        Random rn = new Random();
+        Random rn = new();
+
+        var time = DateTime.Now.AddYears(5).ToString("M/yyyy");
 
         var card = new Card()
         {
             Pan = rn.NextInt64(4000000000000000, 9999999999999999),
-            User = user,
+            Type = Types.PerformanceEdition,
+            ExpirationDate = time,
+            CVV = (uint)rn.NextInt64(100, 999),
             UserId = userId,
-            ExpirationDate = new DateTime(),
-            CVV = (uint)rn.NextInt64(100, 999)
+            User = user,
         };
 
+        //db.Entry(user).State = EntityState.Added;
         user.Cards.Add(card);
+        //db.Cards.Add(card);
 
         db.SaveChanges();
 
@@ -189,7 +195,7 @@ public class HomeController : Controller
                 Result = "Something is wrong. Please try again"
             });
         }
-        
+
         var receiver = db.Users.Include(u => u.RubleAccount)
             .Include(u => u.DollarAccount)
             .Include(u => u.EuroAccount).FirstOrDefault(u => u.PhoneNumber == model.ReceiverPhone);

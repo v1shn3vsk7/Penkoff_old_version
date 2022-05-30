@@ -1,0 +1,143 @@
+﻿h1 {
+    position: absolute;
+    top: 12.7%;
+    left: 45%;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+}
+
+h2 {
+    position: absolute;
+    top: 12%;
+    left: 11%;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+}
+
+h3 {
+    position: absolute;
+    top: 7%;
+    left: 11%;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 24px;
+    color: #e3101b;
+}
+
+input[type="text"] {
+    position: relative;
+    left: 0%;
+    width: 30%;
+    margin-bottom: 0px;
+    margin-top: 200px;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #3F3F3F;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+input[type="number"] {
+    -webkit-appearance: none;
+    position: relative;
+    left: 0%;
+    width: 30%;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #3F3F3F;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.ruble-button {
+    position: absolute;
+    width: 60px;
+    outline: none;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #16FA9C;
+    -webkit-border-radius: 10px;
+    left: 30%;
+    top: 16.3%;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+    .ruble-button:hover {
+        color: white;
+        background: #16FA9C;
+    }
+
+.dollar-button {
+    position: absolute;
+    width: 60px;
+    outline: none;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #16FA9C;
+    -webkit-border-radius: 10px;
+    left: 35%;
+    top: 16.3%;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+    .dollar-button:hover {
+        color: white;
+        background: #16FA9C;
+    }
+
+.euro-button {
+    position: absolute;
+    width: 60px;
+    outline: none;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #16FA9C;
+    -webkit-border-radius: 10px;
+    left: 40%;
+    top: 16.3%;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+    .euro-button:hover {
+        color: white;
+        background: #16FA9C;
+    }
+
+.submit-button {
+    width: 10%;
+    position: absolute;
+    left: 17%;
+    top: 50%;
+    background-color: #176FFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    vertical-align: central;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'SF Pro Display';
+    font-size: 16px;
+    border-radius: 10rem;
+}
+
+    .submit-button:hover {
+        background-color: #16FAEA;
+        color: black;
+        transition: color .5s linear;
+    }

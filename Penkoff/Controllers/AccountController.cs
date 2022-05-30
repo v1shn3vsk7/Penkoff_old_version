@@ -15,6 +15,13 @@ public class AccountController : Controller
         db = context;
     }
 
+    public IActionResult LogOut()
+    {
+        HttpContext.Session.Clear();
+
+        return RedirectToAction("Index", "Home");
+    }
+
     public IActionResult SetRubleAccount() => View("~/Views/Account/Account.cshtml",
        new AccountViewModel
        {

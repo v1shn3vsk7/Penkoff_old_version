@@ -63,6 +63,29 @@ h5 {
         color: black;
     }
 
+.logout-button {
+    position: absolute;
+    left: 12.3%;
+    top: 75%;
+    background-color: #176FFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    vertical-align: central;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'SF Pro Display';
+    font-size: 16px;
+    border-radius: 10rem;
+}
+
+    .logout-button:hover {
+        background-color: #e3101b;
+        color: black;
+        transition: color .3s linear;
+    }
+
 .tmp {
     position: absolute;
     top: 92%;

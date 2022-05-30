@@ -62,7 +62,7 @@ public class ServicesController : Controller
         });
     }
 
-    public IActionResult ChangeToRubleAccount(SendMoneyViewModel model)
+    public IActionResult ChangeToRubleAccount()
     {
         HttpContext.Session.Remove("currency");
         HttpContext.Session.SetString("currency", "RUB");
@@ -77,7 +77,7 @@ public class ServicesController : Controller
         });
     }
 
-    public IActionResult ChangeToDollarAccount(SendMoneyViewModel model)
+    public IActionResult ChangeToDollarAccount()
     {
         HttpContext.Session.Remove("currency");
         HttpContext.Session.SetString("currency", "USD");
@@ -92,7 +92,7 @@ public class ServicesController : Controller
         });
     }
 
-    public IActionResult ChangeToEuroAccount(SendMoneyViewModel model)
+    public IActionResult ChangeToEuroAccount()
     {
         HttpContext.Session.Remove("currency");
         HttpContext.Session.SetString("currency", "EUR");
@@ -254,7 +254,7 @@ public class ServicesController : Controller
         }
     }
 
-    public IActionResult GetPerformanceCard(MyCardsViewModel model)
+    public IActionResult GetPerformanceCard()
     {
         int userId = (int)HttpContext.Session.GetInt32("Id");
 
@@ -269,6 +269,70 @@ public class ServicesController : Controller
         {
             Pan = rn.NextInt64(4000000000000000, 9999999999999999),
             Type = Types.PerformanceEdition,
+            ExpirationDate = time,
+            CVV = (uint)rn.NextInt64(100, 999),
+            UserId = userId,
+            User = user,
+        };
+
+        user.Cards.Add(card);
+
+        db.SaveChanges();
+
+        return View("~/Views/Services/MyCards.cshtml", new MyCardsViewModel
+        {
+            User = user,
+            Cards = user.Cards
+        });
+    }
+
+    public IActionResult GetBillyCard()
+    {
+        int userId = (int)HttpContext.Session.GetInt32("Id");
+
+        var user = db.Users.Include(u => u.Cards).Include(u => u.RubleAccount).Include(u => u.DollarAccount).Include(u => u.EuroAccount)
+            .FirstOrDefault(u => u.Id == userId);
+
+        Random rn = new();
+
+        var time = DateTime.Now.AddYears(5).ToString("M/yyyy");
+
+        var card = new Card()
+        {
+            Pan = rn.NextInt64(4000000000000000, 9999999999999999),
+            Type = Types.BillyEdition,
+            ExpirationDate = time,
+            CVV = (uint)rn.NextInt64(100, 999),
+            UserId = userId,
+            User = user,
+        };
+
+        user.Cards.Add(card);
+
+        db.SaveChanges();
+
+        return View("~/Views/Services/MyCards.cshtml", new MyCardsViewModel
+        {
+            User = user,
+            Cards = user.Cards
+        });
+    }
+
+    public IActionResult GetUltimateCard()
+    {
+        int userId = (int)HttpContext.Session.GetInt32("Id");
+
+        var user = db.Users.Include(u => u.Cards).Include(u => u.RubleAccount).Include(u => u.DollarAccount).Include(u => u.EuroAccount)
+            .FirstOrDefault(u => u.Id == userId);
+
+        Random rn = new();
+
+        var time = DateTime.Now.AddYears(5).ToString("M/yyyy");
+
+        var card = new Card()
+        {
+            Pan = rn.NextInt64(4000000000000000, 9999999999999999),
+            Type = Types.UltimateEdition,
             ExpirationDate = time,
             CVV = (uint)rn.NextInt64(100, 999),
             UserId = userId,

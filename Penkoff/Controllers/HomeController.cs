@@ -44,6 +44,11 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult MyCards()
+    {
+        return View();
+    }
+
     public IActionResult Operations()
     {
         var userId = HttpContext.Session.GetInt32("Id");

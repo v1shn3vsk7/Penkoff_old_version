@@ -1,6 +1,15 @@
-﻿
+﻿@model Penkoff_ASP.NET_Core_.Models.MyCardsViewModel;
+
 <body>
     <h1>Your cards:</h1>
+
+
+    @foreach (var card in Model.Cards.Where(u => u.UserId == Model.User.Id))
+    {
+
+    }
+
+
 
     <h2>Get a new card:</h2>
 
@@ -10,7 +19,7 @@
         <h4>10% cashback at the gym</h4>
         <h4>Leatherman status</h4>
         <h4>10% cashback on latex gloves</h4>
-        <input type="button" class="make-van-card" value="Get" onclick="location.href='@Url.Action("","")'" />
+        <input type="button" class="make-van-card" value="Get" onclick="location.href='@Url.Action("GetPerformanceCard","home")'" />
     </div>
 
     <div class="Billy-card">
@@ -23,7 +32,7 @@
     </div>
 
     <div class="ultimate-card">
-        <img class="ultimate-image" width="300" height="200" src="~/images/ultimateEdition.jpg"/>
+        <img class="ultimate-image" width="300" height="200" src="~/images/ultimateEdition.jpg" />
         <h3>♂Ultimate Edition♂</h3>
         <h4>Free maintenance</h4>
         <h4>Free access to lounge areas</h4>
@@ -31,123 +40,129 @@
 
         <input type="button" class="make-ultimate-card" value="Get" onclick="location.href='@Url.Action("","")'" />
     </div>
-    
+
 
 
 </body>
 
 <style>
-h1 {
-    margin-bottom: 13%;
-    margin-top: 6%;
-    font-family: 'SF Pro Display';
-    font-weight: 600;
-    font-size: 24px;
-    color: #000000;
-}
+    h1 {
+        margin-bottom: 13%;
+        margin-top: 6%;
+        font-family: 'SF Pro Display';
+        font-weight: 600;
+        font-size: 24px;
+        color: #000000;
+    }
 
-h2 {
-    margin-bottom: 2%;
-    margin-top: 6%;
-    font-family: 'SF Pro Display';
-    font-weight: 600;
-    font-size: 24px;
-    color: #000000;
-}
+    h2 {
+        margin-bottom: 2%;
+        margin-top: 6%;
+        font-family: 'SF Pro Display';
+        font-weight: 600;
+        font-size: 24px;
+        color: #000000;
+    }
 
-h3 {
-    font-family: 'SF Pro Display';
-    font-size: 24px;
-    color: #000000;
-}
+    h3 {
+        font-family: 'SF Pro Display';
+        font-size: 24px;
+        color: #000000;
+    }
 
-h4 {
-    font-family: 'SF Pro Display';
-    font-size: 20px;
-    color: #176FFA;
-}
+    h4 {
+        font-family: 'SF Pro Display';
+        font-size: 20px;
+        color: #176FFA;
+    }
 
-.Van-card {
+    .Van-card {
+    }
 
-}
-.van-image {
-    border-radius: 30px;
-}
-.make-van-card {
-    margin-left: 6%;
-    background-color: #176FFA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    vertical-align: central;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'SF Pro Display'; 
-    font-size: 16px;
-    border-radius: 10rem;
-}
-.make-van-card:hover {
-    background-color: #16FAEA; 
-    color: black;
-    transition: color .5s linear;
-}
+    .van-image {
+        border-radius: 30px;
+    }
 
-.Billy-card {
-    margin-left: 38%;
-    margin-top: -43%;
-}
-.billy-image {
-    border-radius: 30px;
-}
-.make-billy-card {
-    margin-left: 12%;
-    background-color: #176FFA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    vertical-align: central;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'SF Pro Display'; 
-    font-size: 16px;
-    border-radius: 10rem;
-}
-.make-billy-card:hover {
-    background-color: #16FAEA; 
-    color: black;
-    transition: color .5s linear;
-}
+    .make-van-card {
+        margin-left: 6%;
+        background-color: #176FFA;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        vertical-align: central;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'SF Pro Display';
+        font-size: 16px;
+        border-radius: 10rem;
+    }
 
-.ultimate-card {
-    float: right;
-    margin-top: -43%;
-}
-.ultimate-image {
-    border-radius: 30px;
-}
-.make-ultimate-card {
-    margin-left: 30%;
-    background-color: #176FFA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    vertical-align: central;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'SF Pro Display'; 
-    font-size: 16px;
-    border-radius: 10rem;
-}
-.make-ultimate-card:hover {
-    background-color: #16FAEA; 
-    color: black;
-    transition: color .5s linear;
-}
+        .make-van-card:hover {
+            background-color: #16FAEA;
+            color: black;
+            transition: color .5s linear;
+        }
 
+    .Billy-card {
+        margin-left: 38%;
+        margin-top: -43%;
+    }
 
+    .billy-image {
+        border-radius: 30px;
+    }
+
+    .make-billy-card {
+        margin-left: 12%;
+        background-color: #176FFA;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        vertical-align: central;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'SF Pro Display';
+        font-size: 16px;
+        border-radius: 10rem;
+    }
+
+        .make-billy-card:hover {
+            background-color: #16FAEA;
+            color: black;
+            transition: color .5s linear;
+        }
+
+    .ultimate-card {
+        float: right;
+        margin-top: -43%;
+    }
+
+    .ultimate-image {
+        border-radius: 30px;
+    }
+
+    .make-ultimate-card {
+        margin-left: 33%;
+        background-color: #176FFA;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        vertical-align: central;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'SF Pro Display';
+        font-size: 16px;
+        border-radius: 10rem;
+    }
+
+        .make-ultimate-card:hover {
+            background-color: #16FAEA;
+            color: black;
+            transition: color .5s linear;
+        }
 
 </style>
 

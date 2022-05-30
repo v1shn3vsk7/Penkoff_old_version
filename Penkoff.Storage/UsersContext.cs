@@ -18,4 +18,6 @@ public class UsersContext : DbContext
     public DbSet<EuroAccount> EuroAccounts { get; set; }
 
     public DbSet<Operation> Operations { get; set; }
+
+    public DbSet<Card> Cards { get; set; }
 }

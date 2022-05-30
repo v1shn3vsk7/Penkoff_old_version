@@ -1,9 +1,16 @@
 ﻿namespace Penkoff.Storage.Entities;
-
+public enum Types
+{
+    PerformanceEdition,
+    BillyEdition,
+    UltimateEdition
+}
 public class Card
 {
     [Key]
-    public Int64 Pan { get; set; } //card number
+    public long Pan { get; set; } //card number
+
+    public Types Type { get; set; }
 
     public DateTime ExpirationDate { get; set; }
 

@@ -46,7 +46,48 @@ public class HomeController : Controller
 
     public IActionResult MyCards()
     {
-        return View();
+        var userId = HttpContext.Session.GetInt32("Id");
+
+        if (userId is null)
+        {
+            return Account();
+        }
+
+        var user = db.Users.Include(u => u.Operations).FirstOrDefault(u => u.Id == userId);
+
+        return View(new MyCardsViewModel
+        {
+            User = user,
+            Cards = user.Cards.ToList().Where(u => u.UserId == userId).Reverse()
+        });
+    }
+
+    public IActionResult GetPerformanceCard(MyCardsViewModel model)
+    {
+        int userId = (int)HttpContext.Session.GetInt32("Id");
+
+        var user = db.Users.Include(u => u.Cards).FirstOrDefault(u => u.Id == userId);
+
+        Random rn = new Random();
+
+        var card = new Card()
+        {
+            Pan = rn.NextInt64(4000000000000000, 9999999999999999),
+            User = user,
+            UserId = userId,
+            ExpirationDate = new DateTime(),
+            CVV = (uint)rn.NextInt64(100, 999)
+        };
+
+        user.Cards.Add(card);
+
+        db.SaveChanges();
+
+        return View("~/Views/Home/MyCards.cshtml", new MyCardsViewModel
+        {
+            User = user,
+            Cards = user.Cards
+        });
     }
 
     public IActionResult Operations()

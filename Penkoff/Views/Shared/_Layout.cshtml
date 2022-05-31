@@ -9,12 +9,13 @@
 <header class="header">
         <div class="container">
             <div class="header_inner">
-                <div class="header_logo">PENKOFF</div>
+                @*<div class="header_logo">PENKOFF</div>*@
+                <a class="header_logo" style="text-decoration:none; color: #176FFA" asp-action="Index" asp-controller="Home">PENKOFF</a>
 
                 <nav>
                     <a class="nav_link" asp-action="Services" asp-controller="Services">Services</a>
                     <a class="nav_link" asp-action="MyCards" asp-controller="MyCards">My cards</a>
-                    <a class="nav_link" href="#">Stocks</a>
+                    <a class="nav_link" asp-action="Stocks" asp-controller="Home" >Stocks</a>
                     <a class="nav_link" asp-action="Account" asp-controller="Login">My account</a>
                 </nav>
                 

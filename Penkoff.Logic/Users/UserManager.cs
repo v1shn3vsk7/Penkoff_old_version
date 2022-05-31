@@ -83,6 +83,15 @@ public class UserManager : IUserManager
         return user;
     }
 
+    public async Task<User> GetUserAll(int Id)
+    {
+        var user = await _context.Users.Include(u => u.RubleAccount).Include(u => u.DollarAccount)
+            .Include(u => u.EuroAccount).Include(u => u.Deposits).Include(u => u.Operations)
+            .FirstOrDefaultAsync(u => u.Id == Id);
+
+        return user;
+    }
+
     public async Task<User> FindUser(string Login)
     {
         var user = await _context.Users.FirstOrDefaultAsync(u => u.Login == Login);
@@ -144,6 +153,13 @@ public class UserManager : IUserManager
     {
         user.PhoneNumber = PhoneNumber;
         user.Mail = Email;
+
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task AddDeposit(User user, Deposit deposit)
+    {
+        user.Deposits.Add(deposit);
 
         await _context.SaveChangesAsync();
     }

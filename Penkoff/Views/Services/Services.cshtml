@@ -14,4 +14,26 @@
         <img class="transaction-history-icon" src="~/images/operationsHistory.png" />
     </a>
 
+    <h3>Deposit:</h3>
+    <div class="deposit">
+
+        <div id="rectangle">
+        <h2>Rate: 20%</h2>
+        <h4>Period: 36 months</h4>
+    </div>
+
+    <form asp-action="Deposit" asp-controller="Services">
+        <p>
+        <input required min=1 asp-for="Amount"/>
+        </p>
+    <input type="button" class="ruble-button" value="RUB" onclick="location.href='@Url.Action("SetRuble", "Services")'" />
+    <input type="button" class="dollar-button" value="USD" onclick="location.href='@Url.Action("SetDollar", "Services")'" />
+    <input type="button" class="euro-button" value="EUR" onclick="location.href='@Url.Action("SetEuro", "Services")'" />
+
+        <input type="submit" value="Get" class="submit-button"/>
+    </form>
+    </div>
+
+    
+    
 </body>

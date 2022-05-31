@@ -20,6 +20,8 @@
 
         Task<User> GetUserWithCardsAndAccounts(int Id);
 
+        Task<User> GetUserAll(int Id);
+
         Task<User> FindUser(string Login);
 
         Task ChangeUserBalance(User user, string Currency, uint Amount, bool isSubstracion);
@@ -31,6 +33,8 @@
         Task AddUser(User user);
 
         Task AddPhoneAndEmail(User user, string PhoneNumber, string Email);
+
+        Task AddDeposit(User user, Deposit deposit);
 
         Task Create(string Login, string Password, string FirstName, string LastName);
 

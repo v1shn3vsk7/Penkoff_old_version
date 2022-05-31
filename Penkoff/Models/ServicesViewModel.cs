@@ -2,6 +2,6 @@
 
 public class ServicesViewModel
 {
-    public string CurrencyPick;
+    public uint Amount { get; set; }
 }
 

@@ -27,7 +27,9 @@ public class ServicesController : Controller
                 new LoginViewModel { result = "" });
         }
 
-        return View();
+        HttpContext.Session.SetString("Currency", "RUB");
+
+        return View(new ServicesViewModel { });
     }
 
     public async Task<IActionResult> Operations()
@@ -57,6 +59,43 @@ public class ServicesController : Controller
             CurrencyPick = "₽",
             Result = ""
         });
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Deposit(ServicesViewModel model)
+    {
+        var userId = (int)HttpContext.Session.GetInt32("Id");
+
+        var user = await _manager.GetUserAll(userId);
+
+        var currency = HttpContext.Session.GetString("Currency");
+
+        var deposit = new Deposit
+        {
+            Amount = model.Amount,
+            StartDate = DateTime.Now.ToString("dd-MM-yyyy"),
+            EndDate = DateTime.Now.AddMonths(36).ToString("dd-MM-yyyy"),
+            Rate = 20,
+            UserId = userId,
+            User = user
+        };
+
+        var operation = new Operation()
+        {
+            UserId = userId,
+            Currency = currency,
+            Type="Transfer",
+            Amount = model.Amount,
+            User = user
+        };
+
+        await _manager.AddOperation(user, operation);
+
+        await _manager.ChangeUserBalance(user, currency, model.Amount, true);
+
+        await _manager.AddDeposit(user, deposit);
+        
+        return View("~/Views/Services/Services.cshtml");
     }
 
     public async Task<IActionResult> ChangeToRubleAccount()
@@ -248,6 +287,30 @@ public class ServicesController : Controller
 
                 });
         }
+    }
+
+    public IActionResult SetRuble()
+    {
+        HttpContext.Session.Remove("Currency");
+        HttpContext.Session.SetString("Currency", "RUB");
+
+        return View("~/Views/Services/Services.cshtml");
+    }
+
+    public IActionResult SetDollar()
+    {
+        HttpContext.Session.Remove("Currency");
+        HttpContext.Session.SetString("Currency", "USD");
+
+        return View("~/Views/Services/Services.cshtml");
+    }
+
+    public IActionResult SetEuro()
+    {
+        HttpContext.Session.Remove("Currency");
+        HttpContext.Session.SetString("Currency", "EUR");
+
+        return View("~/Views/Services/Services.cshtml");
     }
 
     public async Task<IActionResult> GetPerformanceCard()

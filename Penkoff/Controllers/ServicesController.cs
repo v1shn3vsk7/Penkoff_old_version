@@ -98,6 +98,42 @@ public class ServicesController : Controller
         return View("~/Views/Services/Services.cshtml");
     }
 
+    public async Task<IActionResult> Credit(ServicesViewModel model)
+    {
+        var userId = (int)HttpContext.Session.GetInt32("Id");
+
+        var user = await _manager.GetUserAll(userId);
+
+        var currency = HttpContext.Session.GetString("Currency");
+
+        var credit = new Credit()
+        {
+            Amount = model.Amount,
+            StartDate = DateTime.Now.ToString("dd-MM-yyyy"),
+            EndDate = DateTime.Now.AddMonths(69).ToString("dd-MM-yyyy"),
+            Rate = 420,
+            UserId = userId,
+            User = user
+        };
+
+        var operation = new Operation()
+        {
+            UserId = userId,
+            Currency = currency,
+            Type = "Incoming",
+            Amount = model.Amount,
+            User = user
+        };
+
+        await _manager.AddOperation(user, operation);
+
+        await _manager.ChangeUserBalance(user, currency, model.Amount, false);
+
+        await _manager.AddCredit(user, credit);
+
+        return View("~/Views/Services/Services.cshtml");
+    }
+
     public async Task<IActionResult> ChangeToRubleAccount()
     {
         HttpContext.Session.Remove("currency");

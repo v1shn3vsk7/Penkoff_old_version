@@ -42,6 +42,33 @@
         border: 1px solid rgba(0, 0, 0, 0.4);
         box-sizing: border-box;
         border-radius: 12px;
+}
+
+.credit {
+    margin-top: 7%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    width: 300px;
+    height: 150px;
+    background: #FBFBFB;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: 2px solid #4E4E4E;
+    border-radius: 20px;
+}
+
+    .credit input[type="number"] {
+        position: absolute;
+        left: 110%;
+        top: 15px;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #3F3F3F;
+        font-size: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        box-sizing: border-box;
+        border-radius: 12px;
     }
 
 h2 {
@@ -66,6 +93,16 @@ h4 {
     margin-left: 1%;
     font-family: 'SF Pro Display';
     font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+}
+
+h5 {
+    position: absolute;
+    top: 45%;
+    left: 11%;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
     font-size: 24px;
     color: #000000;
 }
@@ -100,6 +137,30 @@ select {
         transition: color .5s linear;
 }
 
+.submit-button1 {
+    width: 30%;
+    position: absolute;
+    left: 126%;
+    top: 60%;
+    background-color: #176FFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    vertical-align: central;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'SF Pro Display';
+    font-size: 16px;
+    border-radius: 10rem;
+}
+
+.submit-button1:hover {
+    background-color: #16FAEA;
+    color: black;
+    transition: color .5s linear;
+}
+
 .ruble-button {
     position: absolute;
     width: 60px;
@@ -114,9 +175,28 @@ select {
     transition: all 0.35s ease;
 }
 
+.ruble-button1 {
+    position: absolute;
+    width: 60px;
+    outline: none;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #16FA9C;
+    -webkit-border-radius: 10px;
+    left: 185%;
+    top: 17%;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.ruble-button1:hover {
+    color: white;
+    background: #16FA9C;
+}
+
 .ruble-button:hover {
-        color: white;
-        background: #16FA9C;
+    color: white;
+    background: #16FA9C;
 }
 
 .dollar-button {
@@ -131,6 +211,25 @@ select {
     top: 21%;
     cursor: pointer;
     transition: all 0.35s ease;
+}
+
+.dollar-button1 {
+    position: absolute;
+    width: 60px;
+    outline: none;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #16FA9C;
+    -webkit-border-radius: 10px;
+    left: 210%;
+    top: 17%;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.dollar-button1:hover {
+    color: white;
+    background: #16FA9C;
 }
 
     .dollar-button:hover {
@@ -150,6 +249,25 @@ select {
     top: 21%;
     cursor: pointer;
     transition: all 0.35s ease;
+}
+
+.euro-button1 {
+    position: absolute;
+    width: 60px;
+    outline: none;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #16FA9C;
+    -webkit-border-radius: 10px;
+    left: 235%;
+    top: 17%;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.euro-button:hover {
+    color: white;
+    background: #16FA9C;
 }
 
     .euro-button:hover {

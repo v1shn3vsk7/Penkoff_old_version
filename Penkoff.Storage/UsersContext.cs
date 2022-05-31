@@ -22,4 +22,6 @@ public class UsersContext : DbContext
     public DbSet<Card> Cards { get; set; }
 
     public DbSet<Deposit> Deposits { get; set; }
+
+    public DbSet<Credit> Credits { get; set; }
 }

@@ -36,6 +36,8 @@
 
         Task AddDeposit(User user, Deposit deposit);
 
+        Task AddCredit(User user, Credit credit);
+
         Task Create(string Login, string Password, string FirstName, string LastName);
 
         Task Delete(int Id);

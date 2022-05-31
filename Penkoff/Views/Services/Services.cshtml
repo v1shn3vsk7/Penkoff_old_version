@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="~/css/Services.css">
+    <title>Services</title>
 </head>
 
 <body>
@@ -34,6 +35,23 @@
     </form>
     </div>
 
-    
+    <h5>Credit: </h5>
+
+    <div class="credit">
+
+        <div id="rectangle1"></div>
+        <h2>Rate: 420%</h2>
+        <h4>Period: 69 months</h4>
+
+        <form asp-action="Credit" asp-controller="Services">
+        <p>
+            <input required min=1 asp-for="Amount" />
+        </p>
+        <input type="submit" value="Get" class="submit-button1" />
+        </form>
+        <input type="button" class="ruble-button1" value="RUB" onclick="location.href='@Url.Action("SetRuble", "Services")'" />
+    <input type="button" class="dollar-button1" value="USD" onclick="location.href='@Url.Action("SetDollar", "Services")'" />
+    <input type="button" class="euro-button1" value="EUR" onclick="location.href='@Url.Action("SetEuro", "Services")'" />
+    </div>
     
 </body>

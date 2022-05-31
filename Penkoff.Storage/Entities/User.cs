@@ -29,5 +29,7 @@ public class User
 
     public List<Deposit> Deposits { get; set; } = new();
 
+    public List<Credit> Credits { get; set; } = new();
+
 }
 

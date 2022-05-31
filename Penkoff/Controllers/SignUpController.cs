@@ -48,7 +48,7 @@ public class SignUpController : Controller
 
         await _manager.AddUser(model.user);
 
-        return View("~/Views/Home/Index.cshtml");
+        return View("~/Views/SignUp/PhoneVerification.cshtml");
     }
 
     [HttpPost]
@@ -70,6 +70,11 @@ public class SignUpController : Controller
     public async Task<IActionResult> ValidateCode()
     {
         string inputCode = Request.Form["code"];
+
+        if (inputCode.Length == 0)
+        {
+            return View("~/Views/SignUp/PhoneVerification.cshtml");
+        }
 
         if (int.Parse(inputCode) == (int)HttpContext.Session.GetInt32("verificationCode"))
         {

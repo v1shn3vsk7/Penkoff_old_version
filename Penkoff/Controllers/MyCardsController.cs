@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Penkoff.Logic.Users;
 using Penkoff.Storage;
 using Penkoff.Storage.Entities;
 using Penkoff_ASP.NET_Core_.Models;
@@ -8,24 +9,23 @@ namespace Penkoff_ASP.NET_Core_.Controllers;
 
 public class MyCardsController : Controller
 {
-    UsersContext db;
+    private readonly IUserManager _manager;
 
-    public MyCardsController(UsersContext context)
+    public MyCardsController(IUserManager manager)
     {
-        db = context;
+        _manager = manager;
     }
 
-    public IActionResult MyCards()
+    public async Task<IActionResult> MyCards()
     {
         var userId = HttpContext.Session.GetInt32("Id");
 
         if (userId is null)
         {
-            //return Account(); 
             return RedirectToAction("Account", "Login");
         }
 
-        var user = db.Users.Include(u => u.Cards).FirstOrDefault(u => u.Id == userId);
+        var user = await _manager.GetUserWithCards((int)userId);
 
         return View("~/Views/Services/MyCards.cshtml", new MyCardsViewModel
         {

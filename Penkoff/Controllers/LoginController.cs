@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Penkoff.Logic.Users;
 using Penkoff.Storage;
 using Penkoff.Storage.Entities;
 using Penkoff_ASP.NET_Core_.Models;
@@ -9,28 +10,24 @@ namespace Penkoff_ASP.NET_Core_.Controllers;
 
 public class LoginController : Controller
 {
-    UsersContext db;
+    private readonly IUserManager _manager;
 
-    public LoginController(UsersContext context)
+    public LoginController(IUserManager manager)
     {
-        db = context;
+        _manager = manager;
     }
 
-    public IActionResult Account()
+    public async Task<IActionResult> Account()
     {
-        int userId;
-
         if (HttpContext.Session.GetInt32("Id") == null)
         {
             return View("~/Views/Authorization/Authorization.cshtml", //directs user to auth page if he is not logged in
                 new LoginViewModel { result = "" });
         }
 
-        userId = (int)HttpContext.Session.GetInt32("Id");
+        int userId = (int)HttpContext.Session.GetInt32("Id");
 
-        var user = db.Users.Include(u => u.RubleAccount)
-            .Include(u => u.DollarAccount)
-            .Include(u => u.EuroAccount).FirstOrDefault(u => u.Id == userId);
+        var user = await _manager.GetUserWithAccounts(userId);
 
         if (user.Mail == null) //directs user to verification page if he didnt verificate email
         {
@@ -50,16 +47,16 @@ public class LoginController : Controller
     }
 
     [HttpPost]
-    public IActionResult Login(LoginViewModel model)
+    public async Task<IActionResult> Login(LoginViewModel model)
     {
         User? attempt = null;
-        attempt = db.Users.FirstOrDefault(u => u.Login == model.user.Login && u.Password == model.user.Password);
+        attempt = await _manager.GetUser(model.user.Login, model.user.Password);
 
         if (attempt is not null)
         {
             HttpContext.Session.SetInt32("Id", attempt.Id);
 
-            return Account();
+            return RedirectToAction("Account", "Login");
         }
         else
         {

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Penkoff.Logic.Users;
 using Penkoff.Storage;
 using Penkoff.Storage.Entities;
 using Penkoff_ASP.NET_Core_.Models;
@@ -8,11 +9,11 @@ namespace Penkoff_ASP.NET_Core_.Controllers;
 
 public class AccountController : Controller
 {
-    UsersContext db;
+    private readonly IUserManager _manager;
 
-    public AccountController(UsersContext context)
+    public AccountController(IUserManager manager)
     {
-        db = context;
+        _manager = manager;
     }
 
     public IActionResult LogOut()
@@ -22,28 +23,35 @@ public class AccountController : Controller
         return RedirectToAction("Index", "Home");
     }
 
-    public IActionResult SetRubleAccount() => View("~/Views/Account/Account.cshtml",
-       new AccountViewModel
-       {
-           currentBalance = SetCurrency.Print(db.Users.Include(u => u.RubleAccount)
-           .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
-           .RubleAccount.Balance.ToString()) + " ₽"
-       });
+    public async Task<IActionResult> SetRubleAccount()
+    {
+        var user = await _manager.GetUserWithSpecialAccount((int)HttpContext.Session.GetInt32("Id"), "RUB");
 
-    public IActionResult SetDollarAccount() => View("~/Views/Account/Account.cshtml",
-        new AccountViewModel
+        return View("~/Views/Account/Account.cshtml", new AccountViewModel
         {
-            currentBalance = SetCurrency.Print(db.Users.Include(u => u.DollarAccount)
-            .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
-            .DollarAccount.Balance.ToString()) + " $"
+            currentBalance = SetCurrency.Print(user.RubleAccount.Balance.ToString()) + " ₽"
         });
 
-    public IActionResult SetEuroAccount() => View("~/Views/Account/Account.cshtml",
-        new AccountViewModel
+    }
+
+    public async Task<IActionResult> SetDollarAccountAsync()
+    {
+        var user = await _manager.GetUserWithSpecialAccount((int)HttpContext.Session.GetInt32("Id"), "USD");
+
+        return View("~/Views/Account/Account.cshtml", new AccountViewModel
         {
-            currentBalance = SetCurrency.Print(db.Users.Include(u => u.EuroAccount)
-            .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
-            .EuroAccount.Balance.ToString()) + " €"
+            currentBalance = SetCurrency.Print(user.DollarAccount.Balance.ToString()) + " $"
         });
+    }
+
+    public async Task<IActionResult> SetEuroAccountAsync()
+    {
+        var user = await _manager.GetUserWithSpecialAccount((int)HttpContext.Session.GetInt32("Id"), "EUR");
+
+        return View("~/Views/Account/Account.cshtml", new AccountViewModel
+        {
+            currentBalance = SetCurrency.Print(user.EuroAccount.Balance.ToString()) + " €"
+        });
+    }
 
 }

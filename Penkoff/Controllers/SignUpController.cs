@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Penkoff.Logic.Users;
 using Penkoff.Storage;
 using Penkoff.Storage.Entities;
 using Penkoff_ASP.NET_Core_.Models;
@@ -9,11 +10,11 @@ namespace Penkoff_ASP.NET_Core_.Controllers;
 
 public class SignUpController : Controller
 {
-    UsersContext db;
+    private readonly IUserManager _manager;
 
-    public SignUpController(UsersContext context)
+    public SignUpController(IUserManager manager)
     {
-        db = context;
+        _manager = manager;
     }
     
     public IActionResult SignUpPage()
@@ -30,7 +31,7 @@ public class SignUpController : Controller
     public async Task<IActionResult> Create(SignUpViewModel model)
     {
         User? attempt = null;
-        attempt = db.Users.FirstOrDefault(u => u.Login == model.user.Login);
+        attempt = await _manager.FindUser(model.user.Login);
 
         if (attempt is not null)
         {
@@ -45,8 +46,7 @@ public class SignUpController : Controller
         model.user.EuroAccount = euroAccount;
         model.user.RubleAccount = rubleAccount;
 
-        db.Users.Add(model.user);
-        await db.SaveChangesAsync();
+        await _manager.AddUser(model.user);
 
         return View("~/Views/Home/Index.cshtml");
     }
@@ -67,19 +67,19 @@ public class SignUpController : Controller
     }
 
     [HttpPost]
-    public IActionResult ValidateCode()
+    public async Task<IActionResult> ValidateCode()
     {
         string inputCode = Request.Form["code"];
 
         if (int.Parse(inputCode) == (int)HttpContext.Session.GetInt32("verificationCode"))
         {
-            User currentUser = db.Users.Find((int)HttpContext.Session.GetInt32("Id")); //get current user
+            var currentUser = await _manager.GetUser((int)HttpContext.Session.GetInt32("Id"));
 
-            currentUser.PhoneNumber = HttpContext.Session.GetString("phone");
-            currentUser.Mail = HttpContext.Session.GetString("mail");
-            db.SaveChanges();
+            var Email = HttpContext.Session.GetString("mail");
+            var PhoneNumber = HttpContext.Session.GetString("phone");
 
-            //return Account();
+            await _manager.AddPhoneAndEmail(currentUser, PhoneNumber, Email);
+
             return RedirectToAction("Account", "Login");
         }
         else

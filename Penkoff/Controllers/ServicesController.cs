@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Penkoff.Logic.Users;
 using Penkoff.Storage;
 using Penkoff.Storage.Entities;
 using Penkoff_ASP.NET_Core_.Models;
@@ -9,11 +10,11 @@ namespace Penkoff_ASP.NET_Core_.Controllers;
 
 public class ServicesController : Controller
 {
-    UsersContext db;
+    private readonly IUserManager _manager;
 
-    public ServicesController(UsersContext context)
+    public ServicesController(IUserManager manager)
     {
-        db = context;
+        _manager = manager;
     }
 
     public IActionResult Services()
@@ -29,11 +30,11 @@ public class ServicesController : Controller
         return View();
     }
 
-    public IActionResult Operations()
+    public async Task<IActionResult> Operations()
     {
         var userId = HttpContext.Session.GetInt32("Id");
 
-        var user = db.Users.Include(u => u.Operations).FirstOrDefault(u => u.Id == userId);
+        var user = await _manager.GetUserWithOperations((int)userId);
 
         return View(new OperationsViewModel
         {
@@ -42,77 +43,78 @@ public class ServicesController : Controller
         });
     }
 
-    public IActionResult SendMoney()
+    public async Task<IActionResult> SendMoney()
     {
         var userId = HttpContext.Session.GetInt32("Id");
 
         HttpContext.Session.SetString("currency", "RUB"); //set currency for future usings in Transactions
 
-        var user = db.Users.Include(u => u.RubleAccount)
-           .Include(u => u.DollarAccount)
-           .Include(u => u.EuroAccount).FirstOrDefault(u => u.Id == userId);
+        var user = await _manager.GetUserWithAccounts((int)userId);
 
         return View(new SendMoneyViewModel
         {
-            Balance = db.Users.Include(u => u.RubleAccount)
-            .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
-            .RubleAccount.Balance,
+            Balance = user.RubleAccount.Balance,
             CurrencyPick = "₽",
             Result = ""
         });
     }
 
-    public IActionResult ChangeToRubleAccount()
+    public async Task<IActionResult> ChangeToRubleAccount()
     {
         HttpContext.Session.Remove("currency");
         HttpContext.Session.SetString("currency", "RUB");
 
+        int userId = (int)HttpContext.Session.GetInt32("Id");
+
+        var user = await _manager.GetUserWithSpecialAccount(userId, "RUB");
+
         return View("~/Views/Services/SendMoney.cshtml", new SendMoneyViewModel
         {
-            Balance = db.Users.Include(u => u.RubleAccount)
-            .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
-            .RubleAccount.Balance,
+            Balance = user.RubleAccount.Balance,
             CurrencyPick = " ₽",
             Result = ""
         });
     }
 
-    public IActionResult ChangeToDollarAccount()
+    public async Task<IActionResult> ChangeToDollarAccountAsync()
     {
         HttpContext.Session.Remove("currency");
         HttpContext.Session.SetString("currency", "USD");
 
+        int userId = (int)HttpContext.Session.GetInt32("Id");
+
+        var user = await _manager.GetUserWithSpecialAccount(userId, "USD");
+
         return View("~/Views/Services/SendMoney.cshtml", new SendMoneyViewModel
         {
-            Balance = db.Users.Include(u => u.DollarAccount)
-            .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
-            .DollarAccount.Balance,
+            Balance = user.DollarAccount.Balance,
             CurrencyPick = " $",
             Result = ""
         });
     }
 
-    public IActionResult ChangeToEuroAccount()
+    public async Task<IActionResult> ChangeToEuroAccountAsync()
     {
         HttpContext.Session.Remove("currency");
         HttpContext.Session.SetString("currency", "EUR");
 
+        int userId = (int)HttpContext.Session.GetInt32("Id");
+
+        var user = await _manager.GetUserWithSpecialAccount(userId, "EUR");
+
         return View("~/Views/Services/SendMoney.cshtml", new SendMoneyViewModel
         {
-            Balance = db.Users.Include(u => u.EuroAccount)
-            .FirstOrDefault(u => u.Id == (int)HttpContext.Session.GetInt32("Id"))
-            .EuroAccount.Balance,
+            Balance = user.EuroAccount.Balance,
             CurrencyPick = " €",
             Result = ""
         });
     }
 
-    public IActionResult Transaction(SendMoneyViewModel model)
+    public async Task<IActionResult> Transaction(SendMoneyViewModel model)
     {
         var UserId = (int)HttpContext.Session.GetInt32("Id");
-        var user = db.Users.Include(u => u.RubleAccount)
-            .Include(u => u.DollarAccount)
-            .Include(u => u.EuroAccount).FirstOrDefault(u => u.Id == UserId);
+
+        var user = await _manager.GetUserWithAccounts(UserId);
 
         try
         {
@@ -130,9 +132,7 @@ public class ServicesController : Controller
             });
         }
 
-        var receiver = db.Users.Include(u => u.RubleAccount)
-            .Include(u => u.DollarAccount)
-            .Include(u => u.EuroAccount).FirstOrDefault(u => u.PhoneNumber == model.ReceiverPhone);
+        var receiver = await _manager.GetUser(model.ReceiverPhone);
 
         if (receiver is null)
         {
@@ -145,8 +145,8 @@ public class ServicesController : Controller
         switch (model.CurrencyPick)
         {
             case "RUB":
-                user.RubleAccount.Balance -= model.Amount;
-                receiver.RubleAccount.Balance += model.Amount;
+                await _manager.ChangeUserBalance(user, "RUB", model.Amount, true);
+                await _manager.ChangeUserBalance(receiver, "RUB", model.Amount, false);
 
                 Operation TransferRUB = new()
                 {
@@ -165,10 +165,8 @@ public class ServicesController : Controller
                     UserId = receiver.Id
                 };
 
-                user.Operations.Add(TransferRUB);
-                receiver.Operations.Add(IncomingRUB);
-
-                db.SaveChanges();
+                await _manager.AddOperation(user, TransferRUB);
+                await _manager.AddOperation(receiver, IncomingRUB);
 
                 return View("~/Views/Services/SendMoney.cshtml", new SendMoneyViewModel
                 {
@@ -178,8 +176,8 @@ public class ServicesController : Controller
                 });
 
             case "USD":
-                user.DollarAccount.Balance -= model.Amount;
-                receiver.DollarAccount.Balance += model.Amount;
+                await _manager.ChangeUserBalance(user, "USD", model.Amount, true);
+                await _manager.ChangeUserBalance(receiver, "USD", model.Amount, false);
 
                 Operation TransferUSD = new()
                 {
@@ -198,10 +196,9 @@ public class ServicesController : Controller
                     UserId = receiver.Id
                 };
 
-                user.Operations.Add(TransferUSD);
-                receiver.Operations.Add(IncomingUSD);
 
-                db.SaveChanges();
+                await _manager.AddOperation(user, TransferUSD);
+                await _manager.AddOperation(receiver, IncomingUSD);
 
                 return View("~/Views/Services/SendMoney.cshtml", new SendMoneyViewModel
                 {
@@ -211,8 +208,8 @@ public class ServicesController : Controller
                 });
 
             case "EUR":
-                user.EuroAccount.Balance -= model.Amount;
-                receiver.EuroAccount.Balance += model.Amount;
+                await _manager.ChangeUserBalance(user, "EUR", model.Amount, true);
+                await _manager.ChangeUserBalance(receiver, "EUR", model.Amount, false);
 
                 Operation TransferEUR = new()
                 {
@@ -231,10 +228,9 @@ public class ServicesController : Controller
                     UserId = receiver.Id
                 };
 
-                user.Operations.Add(TransferEUR);
-                receiver.Operations.Add(IncomingEUR);
 
-                db.SaveChanges();
+                await _manager.AddOperation(user, TransferEUR);
+                await _manager.AddOperation(receiver, IncomingEUR);
 
                 return View("~/Views/Services/SendMoney.cshtml", new SendMoneyViewModel
                 {
@@ -254,12 +250,11 @@ public class ServicesController : Controller
         }
     }
 
-    public IActionResult GetPerformanceCard()
+    public async Task<IActionResult> GetPerformanceCard()
     {
         int userId = (int)HttpContext.Session.GetInt32("Id");
 
-        var user = db.Users.Include(u => u.Cards).Include(u => u.RubleAccount).Include(u => u.DollarAccount).Include(u => u.EuroAccount)
-            .FirstOrDefault(u => u.Id == userId);
+        var user = await _manager.GetUserWithCardsAndAccounts(userId);
 
         Random rn = new();
 
@@ -275,9 +270,7 @@ public class ServicesController : Controller
             User = user,
         };
 
-        user.Cards.Add(card);
-
-        db.SaveChanges();
+        await _manager.AddCard(user, card);
 
         return View("~/Views/Services/MyCards.cshtml", new MyCardsViewModel
         {
@@ -286,12 +279,11 @@ public class ServicesController : Controller
         });
     }
 
-    public IActionResult GetBillyCard()
+    public async Task<IActionResult> GetBillyCard()
     {
         int userId = (int)HttpContext.Session.GetInt32("Id");
 
-        var user = db.Users.Include(u => u.Cards).Include(u => u.RubleAccount).Include(u => u.DollarAccount).Include(u => u.EuroAccount)
-            .FirstOrDefault(u => u.Id == userId);
+        var user = await _manager.GetUserWithCardsAndAccounts(userId);
 
         Random rn = new();
 
@@ -307,9 +299,7 @@ public class ServicesController : Controller
             User = user,
         };
 
-        user.Cards.Add(card);
-
-        db.SaveChanges();
+        await _manager.AddCard(user, card);
 
         return View("~/Views/Services/MyCards.cshtml", new MyCardsViewModel
         {
@@ -318,12 +308,11 @@ public class ServicesController : Controller
         });
     }
 
-    public IActionResult GetUltimateCard()
+    public async Task<IActionResult> GetUltimateCard()
     {
         int userId = (int)HttpContext.Session.GetInt32("Id");
 
-        var user = db.Users.Include(u => u.Cards).Include(u => u.RubleAccount).Include(u => u.DollarAccount).Include(u => u.EuroAccount)
-            .FirstOrDefault(u => u.Id == userId);
+        var user = await _manager.GetUserWithCardsAndAccounts(userId);
 
         Random rn = new();
 
@@ -339,9 +328,7 @@ public class ServicesController : Controller
             User = user,
         };
 
-        user.Cards.Add(card);
-
-        db.SaveChanges();
+        await _manager.AddCard(user, card);
 
         return View("~/Views/Services/MyCards.cshtml", new MyCardsViewModel
         {

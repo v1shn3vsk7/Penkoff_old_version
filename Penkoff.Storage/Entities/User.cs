@@ -27,5 +27,7 @@ public class User
 
     public List<Card> Cards { get; set; } = new();
 
+    public List<Deposit> Deposits { get; set; } = new();
+
 }
 

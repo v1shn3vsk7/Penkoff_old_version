@@ -20,4 +20,6 @@ public class UsersContext : DbContext
     public DbSet<Operation> Operations { get; set; }
 
     public DbSet<Card> Cards { get; set; }
+
+    public DbSet<Deposit> Deposits { get; set; }
 }
